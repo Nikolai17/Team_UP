@@ -41,6 +41,22 @@ class DetailCompetitionViewController: UIViewController {
         
         locationManager.delegate = self
         
+        setupViews()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    private func setupViews() {
         backgroundImage.image = #imageLiteral(resourceName: "background")
         backgroundImage.contentMode = .scaleAspectFill
         
@@ -198,7 +214,7 @@ class DetailCompetitionViewController: UIViewController {
         ])
     }
     
-    func setGradient() {
+    private func setGradient() {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.colors = [UIColor.clear.cgColor, UIColor(red: 0.035, green: 0.035, blue: 0.188, alpha: 1).cgColor]
         gradient.locations = [0.0 , 1]
@@ -206,7 +222,7 @@ class DetailCompetitionViewController: UIViewController {
         gradientView.layer.insertSublayer(gradient, at: 0)
     }
     
-    @objc func didTapRunButton() {
+    @objc private func didTapRunButton() {
         let status = CLLocationManager.authorizationStatus()
         
         // Handle each case of location permissions
@@ -232,7 +248,8 @@ class DetailCompetitionViewController: UIViewController {
         }
     }
     
-    @objc func didTapBackButton() {
+    @objc private func didTapBackButton() {
+        navigationController?.popViewController(animated: true)
         print("didTapBackButton")
     }
 }
