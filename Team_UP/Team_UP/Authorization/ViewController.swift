@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet private weak var loginTextField: UITextField!
     @IBOutlet private weak var continueButton: UIButton!
     @IBOutlet private weak var eyeImageView: UIImageView!
-    var keyboardDismissTapGesture: UIGestureRecognizer?
+    
+    // MARK: - Property
+    private var keyboardDismissTapGesture: UIGestureRecognizer?
     
     
     @IBAction func tapOnEyeInSecureTextField(_ sender: Any) {
