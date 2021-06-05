@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_psb_main.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

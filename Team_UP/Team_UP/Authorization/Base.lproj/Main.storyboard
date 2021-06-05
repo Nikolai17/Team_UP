@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="source-sans-pro-semibold.ttf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Team_UP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="ic_auth_image" translatesAutoresizingMaskIntoConstraints="NO" id="QpQ-Mt-Uqh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ПСБ Спорт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEQ-My-sMd">
+                                <rect key="frame" x="94.5" y="423" width="225.5" height="50.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1o-FB-0JR">
+                                <rect key="frame" x="16" y="569.5" width="382" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pKe-gy-XTh">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Q7g-sd-3YE"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_hide_eye" translatesAutoresizingMaskIntoConstraints="NO" id="TNL-fz-aI1">
+                                        <rect key="frame" x="347" y="23.5" width="20" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="7FW-DQ-A7h"/>
+                                            <constraint firstAttribute="height" constant="17" id="QcF-Zt-dWc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmi-eW-rxz">
+                                        <rect key="frame" x="347" y="23.5" width="20" height="17"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="Afr-G8-4kl"/>
+                                            <constraint firstAttribute="width" constant="20" id="XfQ-wX-KlW"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="tapOnEyeInSecureTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="85m-FG-bfe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fmi-eW-rxz" firstAttribute="centerY" secondItem="pKe-gy-XTh" secondAttribute="centerY" id="52C-nD-47D"/>
+                                    <constraint firstItem="pKe-gy-XTh" firstAttribute="top" secondItem="L1o-FB-0JR" secondAttribute="top" id="BhV-pH-Waj"/>
+                                    <constraint firstAttribute="trailing" secondItem="pKe-gy-XTh" secondAttribute="trailing" id="Ehn-0m-AQM"/>
+                                    <constraint firstItem="TNL-fz-aI1" firstAttribute="centerY" secondItem="pKe-gy-XTh" secondAttribute="centerY" id="IdY-tf-mgo"/>
+                                    <constraint firstAttribute="trailing" secondItem="TNL-fz-aI1" secondAttribute="trailing" constant="15" id="Uki-P2-udY"/>
+                                    <constraint firstAttribute="bottom" secondItem="pKe-gy-XTh" secondAttribute="bottom" id="hjz-av-3Hr"/>
+                                    <constraint firstAttribute="right" secondItem="fmi-eW-rxz" secondAttribute="right" constant="15" id="sKD-yi-d9L"/>
+                                    <constraint firstItem="pKe-gy-XTh" firstAttribute="leading" secondItem="L1o-FB-0JR" secondAttribute="leading" id="wmL-YL-T5L"/>
+                                    <constraint firstAttribute="height" constant="64" id="zrt-Gt-cyP"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_psb_main" translatesAutoresizingMaskIntoConstraints="NO" id="0yC-Eq-IWe">
+                                <rect key="frame" x="165" y="60" width="84" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="1DD-2D-c7N"/>
+                                    <constraint firstAttribute="height" constant="25" id="fh7-HA-Euz"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Табельный номер" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzV-PL-Pye">
+                                <rect key="frame" x="16" y="493.5" width="382" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3jg-Vu-ifH"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEM-b3-Rik">
+                                <rect key="frame" x="16" y="673.5" width="382" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Kf0-5R-UsC"/>
+                                </constraints>
+                                <state key="normal" title="Войти"/>
+                                <connections>
+                                    <action selector="tapOnContinueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRJ-3c-8dy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wEM-b3-Rik" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" constant="16" id="0Mg-0c-NLq"/>
+                            <constraint firstItem="OEQ-My-sMd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Az-gP-9JI"/>
+                            <constraint firstItem="QpQ-Mt-Uqh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EBZ-z2-Jgn"/>
+                            <constraint firstAttribute="bottom" secondItem="QpQ-Mt-Uqh" secondAttribute="bottom" id="Hbg-Y5-dtl"/>
+                            <constraint firstItem="L1o-FB-0JR" firstAttribute="top" secondItem="nzV-PL-Pye" secondAttribute="bottom" constant="12" id="I1L-xv-Grm"/>
+                            <constraint firstAttribute="trailing" secondItem="L1o-FB-0JR" secondAttribute="trailing" constant="16" id="Ktz-fV-ndn"/>
+                            <constraint firstItem="L1o-FB-0JR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="N34-wl-vPo"/>
+                            <constraint firstAttribute="right" secondItem="wEM-b3-Rik" secondAttribute="right" constant="16" id="PGk-9R-oHp"/>
+                            <constraint firstItem="OEQ-My-sMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Usb-ts-72L"/>
+                            <constraint firstAttribute="trailing" secondItem="QpQ-Mt-Uqh" secondAttribute="trailing" id="Zsf-Zz-V9t"/>
+                            <constraint firstItem="nzV-PL-Pye" firstAttribute="top" secondItem="OEQ-My-sMd" secondAttribute="bottom" constant="20" id="gBA-ah-3OD"/>
+                            <constraint firstAttribute="right" secondItem="nzV-PL-Pye" secondAttribute="right" constant="16" id="jlL-cN-AkV"/>
+                            <constraint firstItem="0yC-Eq-IWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lwm-fn-ISd"/>
+                            <constraint firstItem="nzV-PL-Pye" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" constant="16" id="p4A-D1-l8y"/>
+                            <constraint firstItem="0yC-Eq-IWe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="16" id="pcJ-1a-i84"/>
+                            <constraint firstItem="wEM-b3-Rik" firstAttribute="top" secondItem="L1o-FB-0JR" secondAttribute="bottom" constant="40" id="qih-ze-aDc"/>
+                            <constraint firstItem="QpQ-Mt-Uqh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zXz-A5-bUA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="wEM-b3-Rik" id="zI7-dq-QYz"/>
+                        <outlet property="eyeImageView" destination="TNL-fz-aI1" id="EPT-zx-vkB"/>
+                        <outlet property="loginTextField" destination="nzV-PL-Pye" id="kf8-mq-IzL"/>
+                        <outlet property="logoImageView" destination="QpQ-Mt-Uqh" id="rcv-0f-DVN"/>
+                        <outlet property="passwordTextField" destination="pKe-gy-XTh" id="7zw-k2-xyf"/>
+                        <outlet property="psbLabel" destination="OEQ-My-sMd" id="vDD-FF-cLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59.420289855072468" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_auth_image" width="375" height="812"/>
+        <image name="ic_hide_eye" width="20" height="17"/>
+        <image name="ic_psb_main" width="84" height="26"/>
+    </resources>
+</document>
