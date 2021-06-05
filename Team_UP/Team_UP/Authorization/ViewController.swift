@@ -41,6 +41,11 @@ class ViewController: UIViewController {
                 self.showAlert(Constants.failureAuthAlert)
             }
         }
+
+        let feedVC = FeedsViewController()
+        feedVC.modalPresentationStyle = .fullScreen
+        present(feedVC, animated: true)
+
     }
     
     private func resetEyeImageView() {

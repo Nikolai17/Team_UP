@@ -80,9 +80,9 @@
 				B5212CBF266B5A8D0017FC25 /* Feeds */,
 				35FA88F4266AEFF60063BF56 /* Helpers */,
 				35FA88F1266ADF350063BF56 /* Fonts */,
+				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
 				35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */,
-				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
 				35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */,
 				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
@@ -125,6 +125,7 @@
 			sourceTree = "<group>";
 		};
 		8D2DF476D57F098C6E7EB0EB /* Pods */ = {
+
 			isa = PBXGroup;
 			children = (
 				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
@@ -165,6 +166,48 @@
 				B5212CC4266B5AF00017FC25 /* FeedCell.swift */,
 				B5212CC7266B5B140017FC25 /* FeedsView.swift */,
 			);
+
+			isa = PBXGroup;
+			children = (
+				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
+				1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96559DBD5DA1D6DBBA5EEBFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5212CBF266B5A8D0017FC25 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				B5212CD1266B5B3F0017FC25 /* Controller */,
+				B5212CCF266B5B350017FC25 /* View */,
+				B5212CCD266B5B2A0017FC25 /* Model */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		B5212CCD266B5B2A0017FC25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5212CCA266B5B240017FC25 /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5212CCF266B5B350017FC25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5212CC4266B5AF00017FC25 /* FeedCell.swift */,
+				B5212CC7266B5B140017FC25 /* FeedsView.swift */,
+			);
+
 			path = View;
 			sourceTree = "<group>";
 		};
