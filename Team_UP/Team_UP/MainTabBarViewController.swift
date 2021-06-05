@@ -20,10 +20,10 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         delegate = self
         
         let competitionVC = UIViewController()
-        let tapeVC = UIViewController()
+        let feedsVC = FeedsViewController()
         let profileVC = ProfileViewController()
         
-        viewControllers = [competitionVC, tapeVC, profileVC]
+        viewControllers = [competitionVC, feedsVC, profileVC]
         selectedIndex = 2
 
         tabBar.tintColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)

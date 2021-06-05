@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,12 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        FirebaseApp.configure()
+
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ViewController")
-        window?.rootViewController = controller
-        window?.makeKeyAndVisible()
+        self.window?.rootViewController = controller
+        self.window?.makeKeyAndVisible()
+        
+//        Auth.auth().addIDTokenDidChangeListener { (auth, user) in
+//            if user == nil {
+//
+//            }
+//        }
         
         return true
     }
