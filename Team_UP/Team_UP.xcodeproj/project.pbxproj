@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88D5266AA77E0063BF56 /* AppDelegate.swift */; };
-		35FA88D8266AA77E0063BF56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */; };
 		35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88D9266AA77E0063BF56 /* ViewController.swift */; };
 		35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88DB266AA77E0063BF56 /* Main.storyboard */; };
 		35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88DE266AA7800063BF56 /* Assets.xcassets */; };
@@ -17,12 +16,20 @@
 		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
 		35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */; };
 		35FA8902266AF1320063BF56 /* SportsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */; };
+		EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD092FD266B44AC00739B57 /* ProfileViewController.swift */; };
+		EFD09302266B657F00739B57 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09301266B657F00739B57 /* MainTabBarViewController.swift */; };
+		EFD09305266B72D600739B57 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09304266B72D600739B57 /* SettingsViewController.swift */; };
+		EFD09307266B76C100739B57 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09306266B76C100739B57 /* ListTableViewCell.swift */; };
+		EFD09309266B7A8200739B57 /* AchivementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09308266B7A8200739B57 /* AchivementViewController.swift */; };
+		EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0930A266B7D5E00739B57 /* ListItem.swift */; };
+		EFD0930D266B80BB00739B57 /* AchivementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */; };
+		EFD09312266B968000739B57 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09311266B968000739B57 /* SportViewController.swift */; };
+		EFD09314266B99CD00739B57 /* SportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35FA88D2266AA77E0063BF56 /* Team_UP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team_UP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA88D5266AA77E0063BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		35FA88D9266AA77E0063BF56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35FA88DC266AA77E0063BF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35FA88DE266AA7800063BF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +39,15 @@
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsFeedViewController.swift; sourceTree = "<group>"; };
 		35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsFeedViewController.xib; sourceTree = "<group>"; };
+		EFD092FD266B44AC00739B57 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EFD09301266B657F00739B57 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		EFD09304266B72D600739B57 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EFD09306266B76C100739B57 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		EFD09308266B7A8200739B57 /* AchivementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementViewController.swift; sourceTree = "<group>"; };
+		EFD0930A266B7D5E00739B57 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFD09311266B968000739B57 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
+		EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +80,16 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
+				EFD092FC266B449B00739B57 /* Profile */,
 				35FA88FC266AF0ED0063BF56 /* SportsFeed */,
 				35FA88F4266AEFF60063BF56 /* Helpers */,
 				35FA88F1266ADF350063BF56 /* Fonts */,
 				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
-				35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */,
 				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
 				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
 				35FA88E3266AA7800063BF56 /* Info.plist */,
+				EFD09301266B657F00739B57 /* MainTabBarViewController.swift */,
 			);
 			path = Team_UP;
 			sourceTree = "<group>";
@@ -117,6 +134,53 @@
 				35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */,
 			);
 			path = SportsFeed;
+			sourceTree = "<group>";
+		};
+		EFD092FC266B449B00739B57 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EFD09303266B72CB00739B57 /* Settings */,
+				EFD092FD266B44AC00739B57 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EFD09303266B72CB00739B57 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0930E266B964C00739B57 /* Controllers */,
+				EFD0930F266B965500739B57 /* Views */,
+				EFD09310266B965A00739B57 /* Models */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EFD0930E266B964C00739B57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFD09304266B72D600739B57 /* SettingsViewController.swift */,
+				EFD09308266B7A8200739B57 /* AchivementViewController.swift */,
+				EFD09311266B968000739B57 /* SportViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EFD0930F266B965500739B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFD09306266B76C100739B57 /* ListTableViewCell.swift */,
+				EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */,
+				EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFD09310266B965A00739B57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0930A266B7D5E00739B57 /* ListItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +255,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */,
+				EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */,
+				EFD09307266B76C100739B57 /* ListTableViewCell.swift in Sources */,
 				35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */,
+				EFD09302266B657F00739B57 /* MainTabBarViewController.swift in Sources */,
+				EFD09314266B99CD00739B57 /* SportCollectionViewCell.swift in Sources */,
+				EFD09309266B7A8200739B57 /* AchivementViewController.swift in Sources */,
+				EFD0930D266B80BB00739B57 /* AchivementCollectionViewCell.swift in Sources */,
 				35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */,
 				35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */,
 				35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */,
-				35FA88D8266AA77E0063BF56 /* SceneDelegate.swift in Sources */,
+				EFD09305266B72D600739B57 /* SettingsViewController.swift in Sources */,
+				EFD09312266B968000739B57 /* SportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -343,8 +415,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R37S426U66;
+				DEVELOPMENT_TEAM = 6939WNYZGH;
 				INFOPLIST_FILE = Team_UP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,8 +435,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R37S426U66;
+				DEVELOPMENT_TEAM = 6939WNYZGH;
 				INFOPLIST_FILE = Team_UP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
