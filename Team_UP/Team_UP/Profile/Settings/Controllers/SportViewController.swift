@@ -22,14 +22,16 @@ class SportViewController: UIViewController {
     
     private let descriptionLabel = UILabel()
     
+    private let isAdmin: Bool
+    
     private let collectionItems: [SportItem] = [
         SportItem(type: "Футбол", date: "11 июня в 16:00", image: #imageLiteral(resourceName: "footbal")),
         SportItem(type: "Баскетбол", date: "12 июня в 08:00", image: #imageLiteral(resourceName: "footbal")),
         SportItem(type: "Бег", date: "13 июня в 11:00", image: #imageLiteral(resourceName: "footbal"))
     ]
     
-    private let tableItems: [ListItem] = [
-        ListItem(image: #imageLiteral(resourceName: "profile"), title: "Моя команда"),
+    private lazy var tableItems: [ListItem] = [
+        ListItem(image: #imageLiteral(resourceName: "profile"), title: isAdmin ? "Администраторы" : "Моя команда"),
         ListItem(image: #imageLiteral(resourceName: "archive"), title: "Архив событий")
     ]
     
@@ -37,6 +39,10 @@ class SportViewController: UIViewController {
         self.collectionViewLayout = UICollectionViewFlowLayout()
         self.collectionView = UICollectionView(frame: .zero,
                                                collectionViewLayout: collectionViewLayout)
+        
+        let defaults = UserDefaults.standard
+        isAdmin = defaults.bool(forKey: "isAdmin")
+        
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -98,6 +104,9 @@ class SportViewController: UIViewController {
         collectionView.register(SportCollectionViewCell.self,
                                 forCellWithReuseIdentifier: SportCollectionViewCell.identifier)
         
+        collectionView.register(AddCollectionViewCell.self,
+                                forCellWithReuseIdentifier: AddCollectionViewCell.identifier)
+        
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         
@@ -112,7 +121,7 @@ extension SportViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return collectionItems.count
+        return isAdmin ? collectionItems.count + 1 : collectionItems.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -122,10 +131,24 @@ extension SportViewController: UICollectionViewDelegate, UICollectionViewDataSou
                                                                 for: indexPath) as? SportCollectionViewCell
         else { fatalError() }
         
+        if isAdmin && indexPath.row == collectionItems.count {
+            guard let plussCell = collectionView.dequeueReusableCell(withReuseIdentifier: AddCollectionViewCell.identifier,
+                                                                    for: indexPath) as? AddCollectionViewCell
+            else { fatalError() }
+            return plussCell
+        }
+        
         let item = collectionItems[indexPath.row]
         cell.configureCell(title: item.type, date: item.date, image: item.image)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        if isAdmin && indexPath.row == collectionItems.count {
+            print("DidTap Plus Item Cell")
+        }
     }
 }
 
@@ -134,8 +157,13 @@ extension SportViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200,
-                      height: 130)
+        if isAdmin && indexPath.row == collectionItems.count {
+            return CGSize(width: 102,
+                          height: 130)
+        } else {
+            return CGSize(width: 200,
+                          height: 130)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView,

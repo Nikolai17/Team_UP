@@ -24,7 +24,7 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         let profileVC = ProfileViewController()
         
         viewControllers = [competitionVC, feedsVC, profileVC]
-        selectedIndex = 2
+        selectedIndex = 1
 
         tabBar.tintColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
         tabBar.unselectedItemTintColor = .white

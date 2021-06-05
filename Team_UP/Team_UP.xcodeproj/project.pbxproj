@@ -24,6 +24,7 @@
 		B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC7266B5B140017FC25 /* FeedsView.swift */; };
 		B5212CCB266B5B240017FC25 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CCA266B5B240017FC25 /* Feed.swift */; };
 		CCDA03C9B0F7CD4690C3FB88 /* Pods_Team_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */; };
+		EF5D3BFC266C0B790086449E /* AddCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D3BFB266C0B790086449E /* AddCollectionViewCell.swift */; };
 		EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD092FD266B44AC00739B57 /* ProfileViewController.swift */; };
 		EFD09302266B657F00739B57 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09301266B657F00739B57 /* MainTabBarViewController.swift */; };
 		EFD09305266B72D600739B57 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09304266B72D600739B57 /* SettingsViewController.swift */; };
@@ -60,6 +61,7 @@
 		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
 		B5212CCA266B5B240017FC25 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5D3BFB266C0B790086449E /* AddCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFD092FD266B44AC00739B57 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EFD09301266B657F00739B57 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EFD09304266B72D600739B57 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				EFD09306266B76C100739B57 /* ListTableViewCell.swift */,
 				EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */,
 				EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */,
+				EF5D3BFB266C0B790086449E /* AddCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */,
 				EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */,
 				EFE23F97266BB3FC0006DDEF /* DetailCompetitionViewController.swift in Sources */,
+				EF5D3BFC266C0B790086449E /* AddCollectionViewCell.swift in Sources */,
 				EFD09307266B76C100739B57 /* ListTableViewCell.swift in Sources */,
 				B5158BCD266BB8CB00F72543 /* Event.swift in Sources */,
 				B5158BC6266BB80500F72543 /* CompetitionsViewController.swift in Sources */,

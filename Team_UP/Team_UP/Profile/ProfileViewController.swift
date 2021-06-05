@@ -32,10 +32,16 @@ class ProfileViewController: UIViewController {
     private let achievementsVC = AchivementViewController()
     private let settingsVC = SettingsViewController()
     
+    let isAdmin: Bool
+    
     init() {
+        let defaults = UserDefaults.standard
+        isAdmin = defaults.bool(forKey: "isAdmin")
+        
         super.init(nibName: nil, bundle: nil)
         
         tabBarItem = UITabBarItem(title: "Профиль", image: #imageLiteral(resourceName: "profile_tab"), tag: 0)
+        
     }
     
     required init?(coder: NSCoder) {
@@ -47,6 +53,8 @@ class ProfileViewController: UIViewController {
         
         setupViews()
         didTapSportButton()
+        
+        
     }
     
     private func setupViews() {
@@ -76,11 +84,11 @@ class ProfileViewController: UIViewController {
         editImageView.image = #imageLiteral(resourceName: "edit")
         editImageView.contentMode = .scaleAspectFill
         
-        peopleNameLabel.text = "Коля Шульгин"
+        peopleNameLabel.text = isAdmin ? "Виталина"  :"Коля Шульгин"
         peopleNameLabel.font = UIFont.systemFont(ofSize: 22, weight: .medium)
         peopleNameLabel.textColor = .white
         
-        peopleDescriptionLabel.text = "Москва, 32 года"
+        peopleDescriptionLabel.text = isAdmin ? "Администратор, Москва" : "Москва, 32 года"
         peopleDescriptionLabel.font = UIFont.systemFont(ofSize: 13, weight: .regular)
         peopleDescriptionLabel.textColor = .white
         
@@ -88,14 +96,17 @@ class ProfileViewController: UIViewController {
         sectionStackView.distribution = .fillProportionally
         sectionStackView.spacing = 10
         sectionStackView.axis = .horizontal
+        
         sectionStackView.addArrangedSubview(sportButton)
-        sectionStackView.addArrangedSubview(achievementsButton)
+        if !isAdmin {
+            sectionStackView.addArrangedSubview(achievementsButton)
+        }
         sectionStackView.addArrangedSubview(settingsButton)
         
         sportButton.layer.cornerRadius = 22.5
         achievementsButton.layer.cornerRadius = 22.5
         settingsButton.layer.cornerRadius = 22.5
-        sportButton.setTitle("Мой спорт", for: .normal)
+        sportButton.setTitle(isAdmin ? "События" : "Мой спорт", for: .normal)
         achievementsButton.setTitle("Награды", for: .normal)
         settingsButton.setTitle("Настройки", for: .normal)
         sportButton.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
