@@ -28,7 +28,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapOnContinueButton(_ sender: Any) {
-        
+        guard let login = loginTextField.text, let pass = passwordTextField.text else {
+            showAlert(Constants.alertMessage)
+            return
+        }
+       
+        Auth.auth().signIn(withEmail: login, password: pass) { (response, error) in
+            if error == nil {
+                self.dismiss(animated: true, completion: nil)
+                self.showAlert(Constants.successAuthAlert)
+            } else {
+                self.showAlert(Constants.failureAuthAlert)
+            }
+        }
     }
     
     private func resetEyeImageView() {
@@ -45,6 +57,9 @@ class ViewController: UIViewController {
     
     // MARK: - Private methods
     private func initUI() {
+        loginTextField.delegate = self
+        passwordTextField.delegate = self
+        
         passwordTextField.backgroundColor = Constants.spaceBlue
         loginTextField.backgroundColor = Constants.spaceBlue
         passwordTextField.setCornerRadius(amount: 16, withBorderAmount: 0, andColor: Constants.spaceBlue)
@@ -59,6 +74,12 @@ class ViewController: UIViewController {
     private func configurePlaceHolder(_ textField: UITextField, placeHolderText: String) {
         textField.attributedPlaceholder = NSAttributedString(string: placeHolderText,
                                                              attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+    }
+    
+    private func showAlert(_ message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: Constants.titleAlertAction, style:  .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     // MARK: - Helpers
@@ -77,7 +98,13 @@ class ViewController: UIViewController {
             view.addGestureRecognizer(keyboardDismissTapGesture!)
         }
         
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height - (view.frame.maxY - continueButton.frame.maxY)
+            }
+        }
     }
+    
     @objc func dismissKeyboard(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
@@ -86,6 +113,10 @@ class ViewController: UIViewController {
         if keyboardDismissTapGesture != nil {
             view.removeGestureRecognizer(keyboardDismissTapGesture!)
             keyboardDismissTapGesture = nil
+        }
+        
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
         }
     }
     
@@ -97,10 +128,37 @@ class ViewController: UIViewController {
         static let loginTextFieldPlaceHolder = "Табельный номер"
         static let openEyeImage = "ic_open_eye"
         static let hideEyeImage = "ic_hide_eye"
+        static let alertMessage = "Извините, произошла ошибка"
+        static let successAuthAlert = "Успешная авторизация!"
+        static let failureAuthAlert = "Неверные данные"
+        static let titleAlertAction = "OK"
+        static let dataBaseGroup = "users"
+        static let login = "login"
+        static let password = "password"
         
         //        Color
         static let bottomViewColor = UIColor(red: 0.035, green: 0.035, blue: 0.188, alpha: 1).cgColor
         static let spaceBlue = UIColor(red: 0.173, green: 0.176, blue: 0.518, alpha: 1)
         static let continueButtonColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let login = loginTextField.text, let pass = passwordTextField.text else {
+            showAlert(Constants.alertMessage)
+            return true
+        }
+
+        Auth.auth().signIn(withEmail: login, password: pass) { (response, error) in
+            if error == nil {
+                self.dismiss(animated: true, completion: nil)
+                self.showAlert(Constants.successAuthAlert)
+            } else {
+                self.showAlert(Constants.failureAuthAlert)
+            }
+        }
+
+        return true
     }
 }

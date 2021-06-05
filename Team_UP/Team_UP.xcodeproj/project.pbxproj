@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */; };
 		35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */; };
 		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
+		35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */; };
 		B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */; };
 		B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC4266B5AF00017FC25 /* FeedCell.swift */; };
 		B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC7266B5B140017FC25 /* FeedsView.swift */; };
@@ -34,6 +35,7 @@
 		35FA88E3266AA7800063BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
 		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */,
 				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
+				35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */,
 				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
 				35FA88E3266AA7800063BF56 /* Info.plist */,
 			);
@@ -127,7 +130,6 @@
 				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
 				1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +237,7 @@
 			files = (
 				35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */,
 				35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */,
+				35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */,
 				35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */,
 				35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */,
 			);
