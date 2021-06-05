@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A9231C266C096B00D00C8D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A9231B266C096B00D00C8D /* CustomButton.swift */; };
+		35A92320266C097D00D00C8D /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A9231F266C097D00D00C8D /* CustomButton.xib */; };
 		35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88D5266AA77E0063BF56 /* AppDelegate.swift */; };
 		35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88D9266AA77E0063BF56 /* ViewController.swift */; };
 		35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88DB266AA77E0063BF56 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */; };
 		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
 		35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */; };
+		35FA8967266BB5660063BF56 /* СreatingСompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8966266BB5660063BF56 /* СreatingСompetitionViewController.swift */; };
+		35FA896B266BB5980063BF56 /* СreatingСompetition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA896A266BB5980063BF56 /* СreatingСompetition.storyboard */; };
 		B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */; };
 		B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC4266B5AF00017FC25 /* FeedCell.swift */; };
 		B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC7266B5B140017FC25 /* FeedsView.swift */; };
@@ -33,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.release.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.release.xcconfig"; sourceTree = "<group>"; };
+		35A9231B266C096B00D00C8D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		35A9231F266C097D00D00C8D /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		35FA88D2266AA77E0063BF56 /* Team_UP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team_UP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA88D5266AA77E0063BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FA88D9266AA77E0063BF56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +48,15 @@
 		35FA88E3266AA7800063BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35FA8966266BB5660063BF56 /* СreatingСompetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreatingСompetitionViewController.swift"; sourceTree = "<group>"; };
+		35FA896A266BB5980063BF56 /* СreatingСompetition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "СreatingСompetition.storyboard"; sourceTree = "<group>"; };
+		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
+		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
+		B5212CCA266B5B240017FC25 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD092FD266B44AC00739B57 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EFD09301266B657F00739B57 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EFD09304266B72D600739B57 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -51,13 +66,6 @@
 		EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFD09311266B968000739B57 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCell.swift; sourceTree = "<group>"; };
-		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
-		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
-		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
-		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
-		B5212CCA266B5B240017FC25 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35A9231A266C095000D00C8D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				35A9231B266C096B00D00C8D /* CustomButton.swift */,
+				35A9231F266C097D00D00C8D /* CustomButton.xib */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		35FA88C9266AA77E0063BF56 = {
 			isa = PBXGroup;
 			children = (
@@ -93,13 +110,13 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
+				35FA8965266BB4FD0063BF56 /* СreatingСompetition */,
 				EFD092FC266B449B00739B57 /* Profile */,
 				B5212CBF266B5A8D0017FC25 /* Feeds */,
 				35FA88F4266AEFF60063BF56 /* Helpers */,
 				35FA88F1266ADF350063BF56 /* Fonts */,
 				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
-				35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */,
 				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
 				35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */,
 				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
@@ -142,8 +159,17 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
+		35FA8965266BB4FD0063BF56 /* СreatingСompetition */ = {
+			isa = PBXGroup;
+			children = (
+				35A9231A266C095000D00C8D /* Buttons */,
+				35FA8966266BB5660063BF56 /* СreatingСompetitionViewController.swift */,
+				35FA896A266BB5980063BF56 /* СreatingСompetition.storyboard */,
+			);
+			path = "СreatingСompetition";
+			sourceTree = "<group>";
+		};
 		8D2DF476D57F098C6E7EB0EB /* Pods */ = {
-
 			isa = PBXGroup;
 			children = (
 				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
@@ -184,48 +210,6 @@
 				B5212CC4266B5AF00017FC25 /* FeedCell.swift */,
 				B5212CC7266B5B140017FC25 /* FeedsView.swift */,
 			);
-
-			isa = PBXGroup;
-			children = (
-				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
-				1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		96559DBD5DA1D6DBBA5EEBFF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B5212CBF266B5A8D0017FC25 /* Feeds */ = {
-			isa = PBXGroup;
-			children = (
-				B5212CD1266B5B3F0017FC25 /* Controller */,
-				B5212CCF266B5B350017FC25 /* View */,
-				B5212CCD266B5B2A0017FC25 /* Model */,
-			);
-			path = Feeds;
-			sourceTree = "<group>";
-		};
-		B5212CCD266B5B2A0017FC25 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B5212CCA266B5B240017FC25 /* Feed.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B5212CCF266B5B350017FC25 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B5212CC4266B5AF00017FC25 /* FeedCell.swift */,
-				B5212CC7266B5B140017FC25 /* FeedsView.swift */,
-			);
-
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -346,6 +330,8 @@
 				35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */,
 				35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */,
 				35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */,
+				35FA896B266BB5980063BF56 /* СreatingСompetition.storyboard in Resources */,
+				35A92320266C097D00D00C8D /* CustomButton.xib in Resources */,
 				35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */,
 				35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */,
 			);
@@ -402,7 +388,9 @@
 			files = (
 				B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */,
 				B5212CCB266B5B240017FC25 /* Feed.swift in Sources */,
+				35A9231C266C096B00D00C8D /* CustomButton.swift in Sources */,
 				B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */,
+				35FA8967266BB5660063BF56 /* СreatingСompetitionViewController.swift in Sources */,
 				EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */,
 				EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */,
 				EFD09307266B76C100739B57 /* ListTableViewCell.swift in Sources */,

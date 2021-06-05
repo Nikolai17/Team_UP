@@ -18,12 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
 
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ViewController")
-        self.window?.rootViewController = controller
+//        self.window?.rootViewController = controller
+//        self.window?.makeKeyAndVisible()
+        
+        let navigationController = UINavigationController(rootViewController: controller)
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
+        
+        UIBarButtonItem.appearance().tintColor = .white
+        
+        return true
         
 //        Auth.auth().addIDTokenDidChangeListener { (auth, user) in
 //            if user == nil {
@@ -31,7 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //        }
         
-        return true
     }
 }
 
