@@ -29,6 +29,8 @@
 		EFD0930D266B80BB00739B57 /* AchivementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */; };
 		EFD09312266B968000739B57 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09311266B968000739B57 /* SportViewController.swift */; };
 		EFD09314266B99CD00739B57 /* SportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */; };
+		EFE23F97266BB3FC0006DDEF /* DetailCompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE23F96266BB3FC0006DDEF /* DetailCompetitionViewController.swift */; };
+		EFE23F99266BC9550006DDEF /* EventItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE23F98266BC9550006DDEF /* EventItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,13 @@
 		35FA88E3266AA7800063BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
+		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
+		B5212CCA266B5B240017FC25 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD092FD266B44AC00739B57 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EFD09301266B657F00739B57 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EFD09304266B72D600739B57 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -51,13 +60,8 @@
 		EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFD09311266B968000739B57 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCell.swift; sourceTree = "<group>"; };
-		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
-		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
-		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
-		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
-		B5212CCA266B5B240017FC25 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE23F96266BB3FC0006DDEF /* DetailCompetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompetitionViewController.swift; sourceTree = "<group>"; };
+		EFE23F98266BC9550006DDEF /* EventItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,13 +97,13 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
+				EFE23F95266BB3860006DDEF /* DetailCompetition */,
 				EFD092FC266B449B00739B57 /* Profile */,
 				B5212CBF266B5A8D0017FC25 /* Feeds */,
 				35FA88F4266AEFF60063BF56 /* Helpers */,
 				35FA88F1266ADF350063BF56 /* Fonts */,
 				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
-				35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */,
 				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
 				35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */,
 				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
@@ -143,7 +147,6 @@
 			sourceTree = "<group>";
 		};
 		8D2DF476D57F098C6E7EB0EB /* Pods */ = {
-
 			isa = PBXGroup;
 			children = (
 				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
@@ -184,48 +187,6 @@
 				B5212CC4266B5AF00017FC25 /* FeedCell.swift */,
 				B5212CC7266B5B140017FC25 /* FeedsView.swift */,
 			);
-
-			isa = PBXGroup;
-			children = (
-				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
-				1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		96559DBD5DA1D6DBBA5EEBFF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B5212CBF266B5A8D0017FC25 /* Feeds */ = {
-			isa = PBXGroup;
-			children = (
-				B5212CD1266B5B3F0017FC25 /* Controller */,
-				B5212CCF266B5B350017FC25 /* View */,
-				B5212CCD266B5B2A0017FC25 /* Model */,
-			);
-			path = Feeds;
-			sourceTree = "<group>";
-		};
-		B5212CCD266B5B2A0017FC25 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B5212CCA266B5B240017FC25 /* Feed.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B5212CCF266B5B350017FC25 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B5212CC4266B5AF00017FC25 /* FeedCell.swift */,
-				B5212CC7266B5B140017FC25 /* FeedsView.swift */,
-			);
-
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -282,6 +243,15 @@
 				EFD0930A266B7D5E00739B57 /* ListItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EFE23F95266BB3860006DDEF /* DetailCompetition */ = {
+			isa = PBXGroup;
+			children = (
+				EFE23F96266BB3FC0006DDEF /* DetailCompetitionViewController.swift */,
+				EFE23F98266BC9550006DDEF /* EventItemView.swift */,
+			);
+			path = DetailCompetition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,12 +375,14 @@
 				B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */,
 				EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */,
 				EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */,
+				EFE23F97266BB3FC0006DDEF /* DetailCompetitionViewController.swift in Sources */,
 				EFD09307266B76C100739B57 /* ListTableViewCell.swift in Sources */,
 				EFD09302266B657F00739B57 /* MainTabBarViewController.swift in Sources */,
 				EFD09314266B99CD00739B57 /* SportCollectionViewCell.swift in Sources */,
 				EFD09309266B7A8200739B57 /* AchivementViewController.swift in Sources */,
 				EFD0930D266B80BB00739B57 /* AchivementCollectionViewCell.swift in Sources */,
 				35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */,
+				EFE23F99266BC9550006DDEF /* EventItemView.swift in Sources */,
 				B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */,
 				35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */,
 				35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */,
