@@ -20,6 +20,19 @@ class NotificationManager {
     
     func registerForPushNotification() {
         
+        let action = UNNotificationAction(
+            identifier: "event.action.category",
+            title: "Подробнее",
+            options: [])
+        
+        let category = UNNotificationCategory(
+            identifier: "event.category",
+            actions: [action],
+            intentIdentifiers: [],
+            options: [])
+        
+        center.setNotificationCategories([category])
+        
         let options: UNAuthorizationOptions = [.alert, .sound]
         center.requestAuthorization(options: options) { (granted, error) in
             if !granted {
@@ -28,20 +41,24 @@ class NotificationManager {
             self.center.getNotificationSettings { (settings) in
                 if settings.authorizationStatus != .authorized {
                     // Notifications not allowed
-                    let alert = UIAlertController(title: "Allow notification Access", message: "Allow notification access in your device settings.", preferredStyle: UIAlertController.Style.alert)
-
+                    let alert = UIAlertController(title: "Allow notification Access",
+                                                  message: "Allow notification access in your device settings.",
+                                                  preferredStyle: UIAlertController.Style.alert)
+                    
                     // Button to Open Settings
-                    alert.addAction(UIAlertAction(title: "Settings", style: UIAlertAction.Style.default, handler: { action in
-                                                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
-                                                    return
-                                                }
-                                                if UIApplication.shared.canOpenURL(settingsUrl) {
-                                                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                                                        print("Settings opened: \(success)")
-                                                    })
-                                                }
-                                            }))
-                        alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Settings",
+                                                  style: UIAlertAction.Style.default,
+                                                  handler: { action in
+                                                    guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                                                        return
+                                                    }
+                                                    if UIApplication.shared.canOpenURL(settingsUrl) {
+                                                        UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                                                            print("Settings opened: \(success)")
+                                                        })
+                                                    }
+                                                  }))
+                    alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
                     
                     DispatchQueue.main.async {
                         if let app = UIApplication.shared.delegate as? AppDelegate {
@@ -76,7 +93,8 @@ class NotificationManager {
                 
                 let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
                 let request = UNNotificationRequest(identifier: identifier,
-                                                    content: content, trigger: trigger)
+                                                    content: content,
+                                                    trigger: trigger)
                 self.center.add(request, withCompletionHandler: { error in
                     if let error = error {
                         print(error.localizedDescription)

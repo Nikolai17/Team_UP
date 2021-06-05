@@ -73,7 +73,6 @@ class EventItemView: UIView {
             imageView.heightAnchor.constraint(equalToConstant: 19),
             imageView.widthAnchor.constraint(equalToConstant: 19),
             imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            //imageView.topAnchor.constraint(equalTo: topAnchor, constant: 5),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             
             titleLabel.topAnchor.constraint(equalTo: topAnchor),

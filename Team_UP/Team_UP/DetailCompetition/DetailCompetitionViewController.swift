@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import CoreLocation
 
 class DetailCompetitionViewController: UIViewController {
+    
+    private let locationManager = CLLocationManager()
     
     private let backgroundImage = UIImageView()
     private let backgroundView = UIView()
@@ -36,6 +39,8 @@ class DetailCompetitionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        locationManager.delegate = self
+        
         backgroundImage.image = #imageLiteral(resourceName: "background")
         backgroundImage.contentMode = .scaleAspectFill
         
@@ -43,6 +48,7 @@ class DetailCompetitionViewController: UIViewController {
         
         backButton.setImage(#imageLiteral(resourceName: "back"), for: .normal)
         backButton.contentMode = .scaleAspectFit
+        backButton.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
         
         sendButton.setImage(#imageLiteral(resourceName: "message"), for: .normal)
         sendButton.contentMode = .scaleAspectFill
@@ -57,13 +63,14 @@ class DetailCompetitionViewController: UIViewController {
         descriptionLabel.text = "Отборочный тур среди всех офисов ПСБ банка Москвы"
         descriptionLabel.font = UIFont.systemFont(ofSize: 13, weight: .regular)
         descriptionLabel.textColor = .white
-
+        
         setGradient()
         
         runButton.backgroundColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
         runButton.setTitle("Участвовать", for: .normal)
         runButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
         runButton.layer.cornerRadius = 16
+        runButton.addTarget(self, action: #selector(didTapRunButton), for: .touchUpInside)
         
         detailTitleLabel.text = "Детали"
         detailTitleLabel.font = UIFont.systemFont(ofSize: 13, weight: .medium)
@@ -109,7 +116,7 @@ class DetailCompetitionViewController: UIViewController {
         view.addSubview(galleryDescriptionLabel)
         view.addSubview(backButton)
         view.addSubview(sendButton)
-
+        
         sendButton.translatesAutoresizingMaskIntoConstraints = false
         backButton.translatesAutoresizingMaskIntoConstraints = false
         gradientView.translatesAutoresizingMaskIntoConstraints = false
@@ -158,7 +165,7 @@ class DetailCompetitionViewController: UIViewController {
             titleLabel.bottomAnchor.constraint(equalTo: descriptionLabel.topAnchor, constant: -10),
             titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-
+            
             runButton.topAnchor.constraint(equalTo: eventImageView.bottomAnchor, constant: 24),
             runButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             runButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
@@ -197,5 +204,56 @@ class DetailCompetitionViewController: UIViewController {
         gradient.locations = [0.0 , 1]
         gradient.frame = gradientView.layer.frame
         gradientView.layer.insertSublayer(gradient, at: 0)
+    }
+    
+    @objc func didTapRunButton() {
+        let status = CLLocationManager.authorizationStatus()
+        
+        // Handle each case of location permissions
+        switch status {
+        case .authorizedAlways:
+            locationManager.requestLocation()
+        case .authorizedWhenInUse:
+            locationManager.requestLocation()
+        case .denied:
+            print("denied")
+            locationManager.requestAlwaysAuthorization()
+            break
+        case .notDetermined:
+            print("notDetermined")
+            locationManager.requestAlwaysAuthorization()
+            break
+        case .restricted:
+            print("restricted")
+            locationManager.requestAlwaysAuthorization()
+            break
+        @unknown default:
+            break
+        }
+    }
+    
+    @objc func didTapBackButton() {
+        print("didTapBackButton")
+    }
+}
+
+extension DetailCompetitionViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager,
+                         didFailWithError error: Error) {
+        print("didFailWithError: \(error)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager,
+                         didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            let latitude = location.coordinate.latitude
+            let longitude = location.coordinate.longitude
+            print("latitude: \(latitude) longitude: \(longitude)")
+            
+            NotificationManager.shared.showNotification(title: "Присутствие подтверждено",
+                                                        body: "Спасибо за ваше участие в данном соревновании",
+                                                        identifier: "Notification event")
+        }
     }
 }
