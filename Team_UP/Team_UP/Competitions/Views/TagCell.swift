@@ -19,7 +19,6 @@ class TagCell: UICollectionViewCell {
         view.layer.shadowRadius = 3.0
         view.layer.shadowOpacity = 0.2
         view.layer.masksToBounds = false
-//        view.backgroundColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
         view.backgroundColor = UIColor(red: 0.035, green: 0.035, blue: 0.188, alpha: 0.5)
        return view
     }()
@@ -31,6 +30,7 @@ class TagCell: UICollectionViewCell {
         label.textColor = .white
         return label
     }()
+    var check: Bool = false
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {
@@ -50,6 +50,7 @@ class TagCell: UICollectionViewCell {
         addSubview(viewConteiner)
         viewConteiner.addSubview(tagLabel)
         createConstrains()
+        check = false
     }
     private func createConstrains() {
         

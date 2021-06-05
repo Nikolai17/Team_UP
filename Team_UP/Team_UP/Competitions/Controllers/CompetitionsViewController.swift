@@ -28,6 +28,7 @@ class CompetitionsViewController: UIViewController {
         layout.estimatedItemSize = CGSize(width: 20, height: 40)
         let collection = UICollectionView(frame: CGRect(x: 16, y: 100, width: view.frame.width, height: 40), collectionViewLayout: layout)
         collection.dataSource = self
+        collection.delegate = self
         collection.showsHorizontalScrollIndicator = false
         collection.register(TagCell.self, forCellWithReuseIdentifier: TagCell.identifier)
         collection.backgroundColor = .clear
@@ -122,8 +123,27 @@ extension CompetitionsViewController: UICollectionViewDataSource {
     
     func configure(_ cell: UICollectionViewCell, at indexPath: IndexPath) -> TagCell {
         guard let `cell` = cell as? TagCell else {return TagCell()}
+        if cell.check {
+            cell.viewConteiner.backgroundColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
+        } else {
+            cell.viewConteiner.backgroundColor = UIColor(red: 0.035, green: 0.035, blue: 0.188, alpha: 0.5)
+        }
         cell.tagLabel.text = tagData[indexPath.row]
         return cell
     }
 
+}
+
+extension CompetitionsViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? TagCell else {return}
+        if cell.check {
+            cell.viewConteiner.backgroundColor = UIColor(red: 0.035, green: 0.035, blue: 0.188, alpha: 0.5)
+            cell.check = false
+        } else {
+            cell.viewConteiner.backgroundColor  = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
+            cell.check = true
+        }
+    }
 }
