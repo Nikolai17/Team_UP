@@ -32,9 +32,15 @@ class ViewController: UIViewController {
             showAlert(Constants.alertMessage)
             return
         }
-       
+
         Auth.auth().signIn(withEmail: login, password: pass) { (response, error) in
             if error == nil {
+                let defaults = UserDefaults.standard
+                if login == "admin@admin.ru" {
+                    defaults.set(true, forKey: "isAdmin")
+                } else {
+                    defaults.set(false, forKey: "isAdmin")
+                }
                 self.present(MainTabBarViewController(), animated: true)
             } else {
                 self.showAlert(Constants.failureAuthAlert)
@@ -151,8 +157,13 @@ extension ViewController: UITextFieldDelegate {
 
         Auth.auth().signIn(withEmail: login, password: pass) { (response, error) in
             if error == nil {
-                self.dismiss(animated: true, completion: nil)
-                self.showAlert(Constants.successAuthAlert)
+                let defaults = UserDefaults.standard
+                if login == "admin@admin.ru" {
+                    defaults.set(true, forKey: "isAdmin")
+                } else {
+                    defaults.set(false, forKey: "isAdmin")
+                }
+                self.present(MainTabBarViewController(), animated: true)
             } else {
                 self.showAlert(Constants.failureAuthAlert)
             }
