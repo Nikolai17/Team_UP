@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var loginTextField: UITextField!
     @IBOutlet private weak var continueButton: UIButton!
     @IBOutlet private weak var eyeImageView: UIImageView!
-    var keyboardDismissTapGesture: UIGestureRecognizer?
+    private var keyboardDismissTapGesture: UIGestureRecognizer?
     
     
     @IBAction func tapOnEyeInSecureTextField(_ sender: Any) {
@@ -25,7 +25,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapOnContinueButton(_ sender: Any) {
-        
+        let feedVC = FeedsViewController()
+        feedVC.modalPresentationStyle = .fullScreen
+        present(feedVC, animated: true)
     }
     
     private func resetEyeImageView() {

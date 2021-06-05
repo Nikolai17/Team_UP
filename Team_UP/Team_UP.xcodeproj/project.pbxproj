@@ -15,8 +15,6 @@
 		35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */; };
 		35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */; };
 		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
-		35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */; };
-		35FA8902266AF1320063BF56 /* SportsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */; };
 		B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */; };
 		B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC4266B5AF00017FC25 /* FeedCell.swift */; };
 		B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC7266B5B140017FC25 /* FeedsView.swift */; };
@@ -34,8 +32,6 @@
 		35FA88E3266AA7800063BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsFeedViewController.swift; sourceTree = "<group>"; };
-		35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsFeedViewController.xib; sourceTree = "<group>"; };
 		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
@@ -73,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				B5212CBF266B5A8D0017FC25 /* Feeds */,
-				35FA88FC266AF0ED0063BF56 /* SportsFeed */,
 				35FA88F4266AEFF60063BF56 /* Helpers */,
 				35FA88F1266ADF350063BF56 /* Fonts */,
 				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
@@ -117,15 +112,6 @@
 				35FA88DB266AA77E0063BF56 /* Main.storyboard */,
 			);
 			path = Authorization;
-			sourceTree = "<group>";
-		};
-		35FA88FC266AF0ED0063BF56 /* SportsFeed */ = {
-			isa = PBXGroup;
-			children = (
-				35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */,
-				35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */,
-			);
-			path = SportsFeed;
 			sourceTree = "<group>";
 		};
 		B5212CBF266B5A8D0017FC25 /* Feeds */ = {
@@ -220,7 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FA8902266AF1320063BF56 /* SportsFeedViewController.xib in Resources */,
 				35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */,
 				35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */,
 				35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */,
@@ -238,7 +223,6 @@
 				B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */,
 				B5212CCB266B5B240017FC25 /* Feed.swift in Sources */,
 				B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */,
-				35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */,
 				35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */,
 				B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */,
 				35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */,
