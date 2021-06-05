@@ -8,8 +8,8 @@
 import Foundation
 
 struct Event {
-    var date: String 
-    var adress: String
-    var image: String
-    var type: String
+    let date: String
+    let adress: String
+    let image: String
+    let type: String
 }
