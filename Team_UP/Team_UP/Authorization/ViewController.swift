@@ -11,41 +11,43 @@ class ViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet private weak var psbLabel: UILabel!
-    @IBOutlet private weak var bottomView: UIView!
     @IBOutlet private weak var logoImageView: UIImageView!
-    @IBOutlet private weak var gradientView: UIView!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var loginTextField: UITextField!
+    @IBOutlet private weak var continueButton: UIButton!
+    @IBOutlet private weak var eyeImageView: UIImageView!
+    
+    @IBAction func tapOnEyeInSecureTextField(_ sender: Any) {
+        passwordTextField.isSecureTextEntry.toggle()
+        resetEyeImageView()
+    }
+    
+    @IBAction func tapOnContinueButton(_ sender: Any) {
+        
+    }
+    
+    private func resetEyeImageView() {
+        passwordTextField.isSecureTextEntry
+            ? (eyeImageView.image = UIImage(named: Constants.hideEyeImage))
+            : (eyeImageView.image = UIImage(named: Constants.openEyeImage))
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
     }
- 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setGradientView()
-    }
     
     // MARK: - Private methods
     private func initUI() {
-        bottomView.layer.backgroundColor = Constants.bottomViewColor
         passwordTextField.backgroundColor = Constants.spaceBlue
         loginTextField.backgroundColor = Constants.spaceBlue
+        passwordTextField.setCornerRadius(amount: 16, withBorderAmount: 0, andColor: Constants.spaceBlue)
+        loginTextField.setCornerRadius(amount: 16, withBorderAmount: 0, andColor: Constants.spaceBlue)
         configurePlaceHolder(passwordTextField, placeHolderText: Constants.passwordTextFieldPlaceHolder)
         configurePlaceHolder(loginTextField, placeHolderText: Constants.loginTextFieldPlaceHolder)
-        view.sendSubviewToBack(gradientView)
-        view.sendSubviewToBack(logoImageView)
-    }
-    
-    private func setGradientView() {
-        let gradient = CAGradientLayer()
-        gradient.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 88)
-        gradient.startPoint = Constants.gradientStartPoint
-        gradient.endPoint = Constants.gradientEndPoint
-        gradient.colors = [UIColor.clear.cgColor, Constants.bottomViewColor]
-        gradient.locations = Constants.gradientLocations
-        gradientView.layer.addSublayer(gradient)
+        continueButton.backgroundColor = Constants.continueButtonColor
+        continueButton.setTitleColor(.white, for: .normal)
+        continueButton.setCornerRadius(amount: 16, withBorderAmount: 0, andColor: Constants.continueButtonColor)
     }
     
     private func configurePlaceHolder(_ textField: UITextField, placeHolderText: String) {
@@ -56,15 +58,13 @@ class ViewController: UIViewController {
     private enum Constants {
 //        Strings
         static let passwordTextFieldPlaceHolder = "Табельный номер"
-        static let loginTextFieldPlaceHolder = "Логин"
+        static let loginTextFieldPlaceHolder = "Пароль"
+        static let openEyeImage = "ic_open_eye"
+        static let hideEyeImage = "ic_hide_eye"
         
 //        Color
         static let bottomViewColor = UIColor(red: 0.035, green: 0.035, blue: 0.188, alpha: 1).cgColor
         static let spaceBlue = UIColor(red: 0.173, green: 0.176, blue: 0.518, alpha: 1)
-        
-//        Gradient
-        static let gradientStartPoint = CGPoint(x: 0.0, y: 0.5)
-        static let gradientEndPoint = CGPoint(x: 0.0, y: 1)
-        static let gradientLocations: [NSNumber]? = [0.0, 1.0]
+        static let continueButtonColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
     }
 }

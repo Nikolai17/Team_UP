@@ -14,6 +14,9 @@
 		35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88DE266AA7800063BF56 /* Assets.xcassets */; };
 		35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */; };
 		35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */; };
+		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
+		35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */; };
+		35FA8902266AF1320063BF56 /* SportsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		35FA88E1266AA7800063BF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35FA88E3266AA7800063BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
+		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsFeedViewController.swift; sourceTree = "<group>"; };
+		35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsFeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,12 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
+				35FA88FC266AF0ED0063BF56 /* SportsFeed */,
+				35FA88F4266AEFF60063BF56 /* Helpers */,
 				35FA88F1266ADF350063BF56 /* Fonts */,
 				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
 				35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */,
-				35FA88D9266AA77E0063BF56 /* ViewController.swift */,
-				35FA88DB266AA77E0063BF56 /* Main.storyboard */,
+				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
 				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
 				35FA88E3266AA7800063BF56 /* Info.plist */,
@@ -76,6 +83,40 @@
 				35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		35FA88F4266AEFF60063BF56 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35FA88F5266AF00C0063BF56 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		35FA88F5266AF00C0063BF56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35FA88F6266AF01C0063BF56 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35FA88FA266AF0930063BF56 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				35FA88D9266AA77E0063BF56 /* ViewController.swift */,
+				35FA88DB266AA77E0063BF56 /* Main.storyboard */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		35FA88FC266AF0ED0063BF56 /* SportsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */,
+				35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */,
+			);
+			path = SportsFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA8902266AF1320063BF56 /* SportsFeedViewController.xib in Resources */,
 				35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */,
 				35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */,
 				35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */,
@@ -149,6 +191,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */,
+				35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */,
 				35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */,
 				35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */,
 				35FA88D8266AA77E0063BF56 /* SceneDelegate.swift in Sources */,
@@ -308,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Team-UP.Team-UP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Team-UP.Team-UP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
