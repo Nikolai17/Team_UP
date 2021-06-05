@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapOnContinueButton(_ sender: Any) {
-        
+        present(MainTabBarViewController(), animated: true)
     }
     
     private func resetEyeImageView() {
