@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeedsView: UIView {
+final class FeedsView: UIView {
     
     // Имя автора
     let nameLabel: UILabel = {

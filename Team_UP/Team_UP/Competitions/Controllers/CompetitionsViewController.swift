@@ -56,8 +56,17 @@ class CompetitionsViewController: UIViewController {
         return titleLabel
     }()
     
+    lazy var findButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: view.frame.width - 50 , y: 50, width: 30, height: 30))
+        button.setImage(UIImage(named: "find"), for: .normal)
+        button.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
+        return button
+    }()
+    
     var eventsData = [Event]() // Массив с объектами
     var tagData = ["Все", "Футбол","Марафон", "Волейбол","Баскетбол", "Тенис","Кёрлинг", "Олимпиада","Прятки", "Отчеты","Бег", "Стритбол"]
+    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         createUI()
@@ -76,7 +85,14 @@ class CompetitionsViewController: UIViewController {
         view.addSubview(eventTableView)
         view.addSubview(tagCollection)
         view.addSubview(titleLabel)
-
+        view.addSubview(findButton)
+    }
+    
+    @objc func showAlert() {
+        let aletr = UIAlertController(title: "Упс...", message: "Функция в процессе разработки", preferredStyle: .actionSheet)
+        let okButton = UIAlertAction(title: "Ясно-понятно", style: .destructive)
+        aletr.addAction(okButton)
+        present(aletr, animated: true)
     }
     
 }
