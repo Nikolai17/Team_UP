@@ -4,7 +4,6 @@
 //
 //  Created by Ivan Kopiev on 05.06.2021.
 //
-
 import UIKit
 
 class FeedsViewController: UIViewController {
@@ -20,8 +19,8 @@ class FeedsViewController: UIViewController {
     }
     
     // MARK: - Свойства
-    private let cellId = "cell" // Идентификатор ячейки
-    private lazy var feedTableView: UITableView = { // Объект таблицы
+    private let cellId = "cell"
+    private lazy var feedTableView: UITableView = {
         let table = UITableView(frame: view.frame, style: .plain)
         table.register(FeedCell.self, forCellReuseIdentifier: cellId)
         table.delegate = self
@@ -39,7 +38,7 @@ class FeedsViewController: UIViewController {
         super.viewDidLoad()
         createUI()
         feedData.append(Feed(image: "run", name: "Коля Шульгин", description: "Сегодня пробежал 14 км, это было тяжело, но я справился...", kindOfSport: "Бег", numberOfViews: 8563, numberOfLikes: 6473, numberOfComments: 342))
-        feedData.append(Feed(image: "run", name: "Коля Шульгин", description: "Сегодня пробежал 14 км, это было тяжело, но я справился...", kindOfSport: "Бег", numberOfViews: 8563, numberOfLikes: 6473, numberOfComments: 342))
+        feedData.append(Feed(image: "football", name: "Александр Крыжовников", description: "С парнями сегодня гоняли мяч, наша команда победила со счетом 4:1. Ура, товарищи!", kindOfSport: "Футбол", numberOfViews: 6573, numberOfLikes: 5606, numberOfComments: 313))
 
     }
     
@@ -66,7 +65,7 @@ extension FeedsViewController: UITableViewDataSource {
         return configure(cell: cell, at: indexPath)
     }
     
-    func configure(cell: UITableViewCell, at indexPath: IndexPath) -> FeedCell {  
+    func configure(cell: UITableViewCell, at indexPath: IndexPath) -> FeedCell {
         guard let newCell = cell as? FeedCell else { return FeedCell()}
         newCell.configureCell(with: feedData[indexPath.row])
         return newCell

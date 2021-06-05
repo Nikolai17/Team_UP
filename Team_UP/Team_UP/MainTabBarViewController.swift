@@ -19,7 +19,7 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         
         delegate = self
         
-        let competitionVC = UIViewController()
+        let competitionVC = CompetitionsViewController()
         let feedsVC = FeedsViewController()
         let profileVC = ProfileViewController()
         

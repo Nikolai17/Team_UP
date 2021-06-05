@@ -45,6 +45,10 @@ class FeedCell: UITableViewCell {
         cellView.nameLabel.text = feed.name
         cellView.descriptionLabel.text = feed.description
         cellView.kindOfSport.text = feed.kindOfSport
+        cellView.viewsLabel.text = "\(feed.numberOfViews)"
+        cellView.likesLabel.text = "\(feed.numberOfLikes)"
+        cellView.commentsLabel.text = "\(feed.numberOfComments)"
+
     }
 
 }
