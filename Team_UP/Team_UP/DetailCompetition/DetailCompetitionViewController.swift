@@ -222,10 +222,20 @@ class DetailCompetitionViewController: UIViewController {
         gradientView.layer.insertSublayer(gradient, at: 0)
     }
     
+    private func startUpdatingLocation() {
+        // Start updating location
+        locationManager.startUpdatingLocation()
+    }
+    
+    private func stopUpdatingLocation() {
+        // Make sure to stop updating location when your
+        // app no longer needs location updates
+        locationManager.stopUpdatingLocation()
+    }
+    
     @objc private func didTapRunButton() {
         let status = CLLocationManager.authorizationStatus()
         
-        // Handle each case of location permissions
         switch status {
         case .authorizedAlways:
             locationManager.requestLocation()
