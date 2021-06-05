@@ -9,6 +9,8 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
+pod 'GrowingTextView', '0.6.1'
+pod 'SnapKit', '~> 5.0.0'
 
 
 end

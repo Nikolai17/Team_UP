@@ -59,6 +59,7 @@ class SportViewController: UIViewController {
     
     private func configureViews() {
         
+        navigationController?.navigationBar.isHidden = true
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -147,7 +148,10 @@ extension SportViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         if isAdmin && indexPath.row == collectionItems.count {
-            print("DidTap Plus Item Cell")
+            let storyboard = UIStoryboard(name: "CreatingCompetition", bundle: Bundle.main)
+            let vc = storyboard.instantiateViewController(withIdentifier: "CreatingCompetitionID") as! CreatingCompetitionViewController
+            vc.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
