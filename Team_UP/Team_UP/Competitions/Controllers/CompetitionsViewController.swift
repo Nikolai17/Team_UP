@@ -12,7 +12,6 @@ class CompetitionsViewController: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        
         tabBarItem = UITabBarItem(title: "Соревнования", image: #imageLiteral(resourceName: "competition"), tag: 0)
     }
     
@@ -21,9 +20,23 @@ class CompetitionsViewController: UIViewController {
     }
     
     // MARK: - Свойства
+    
+    lazy var tagCollection: UICollectionView = {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.scrollDirection = .horizontal
+        layout.estimatedItemSize = CGSize(width: 20, height: 40)
+        let collection = UICollectionView(frame: CGRect(x: 16, y: 100, width: view.frame.width, height: 40), collectionViewLayout: layout)
+        collection.dataSource = self
+        collection.showsHorizontalScrollIndicator = false
+        collection.register(TagCell.self, forCellWithReuseIdentifier: TagCell.identifier)
+        collection.backgroundColor = .clear
+        return collection
+    }()
+    
     private let cellId = "cell"
-    private lazy var feedTableView: UITableView = {
-        let table = UITableView(frame: view.frame, style: .plain)
+    private lazy var eventTableView: UITableView = {
+        let table = UITableView(frame: CGRect(x: 0, y: 160, width: view.frame.width, height: view.frame.height-160), style: .plain)
         table.register(EventCell.self, forCellReuseIdentifier: cellId)
         table.delegate = self
         table.dataSource = self
@@ -34,14 +47,23 @@ class CompetitionsViewController: UIViewController {
         return table
     }()
     
-    var eventsData = [Event]() // Массив с объектами
+    private lazy var titleLabel: UILabel = {
+        let titleLabel = UILabel(frame:CGRect(x: 0, y: 50, width: view.frame.width, height: 30))
+        titleLabel.font = .monospacedDigitSystemFont(ofSize: 22, weight: .regular)
+        titleLabel.textColor = .white
+        titleLabel.textAlignment = .center
+        titleLabel.text = "Соревнования"
+        return titleLabel
+    }()
     
+    var eventsData = [Event]() // Массив с объектами
+    var tagData = ["Все", "Футбол","Марафон", "Волейбол","Баскетбол", "Тенис","Кёрлинг", "Олимпиада","Прятки", "Отчеты","Бег", "Стритбол"]
     override func viewDidLoad() {
         super.viewDidLoad()
         createUI()
         eventsData.append(Event(date: "10 июля, суббота", adress: "Самый крупный марафон с синхронным стартом", image: "marafon", type: "Марафон, 25 км"))
         eventsData.append(Event(date: "11 июля, воскресение", adress: "Финальный матч между командами “IT гиганты” и “Офисный планктон”", image: "foot", type: "Футбол"))
-
+        
     }
     
     
@@ -51,7 +73,10 @@ class CompetitionsViewController: UIViewController {
         let backgroundImageView = UIImageView(image: UIImage(named: "background"))
         backgroundImageView.frame = view.frame
         view.addSubview(backgroundImageView)
-        view.addSubview(feedTableView)
+        view.addSubview(eventTableView)
+        view.addSubview(tagCollection)
+        view.addSubview(titleLabel)
+
     }
     
 }
@@ -77,17 +102,28 @@ extension CompetitionsViewController: UITableViewDataSource {
 }
 // MARK: - Extension Delegate
 extension CompetitionsViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let titleLabel = UILabel(frame:CGRect(x: 0, y: 0, width: 183, height: 40))
-        titleLabel.font = .boldSystemFont(ofSize: 22)
-        titleLabel.textColor = .white
-        titleLabel.textAlignment = .center
-        titleLabel.text = "Соревнования"
-        return titleLabel
-    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
     
+}
+
+// MARK: - Extension CollectionView DataSource
+extension CompetitionsViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TagCell.identifier, for: indexPath)
+        return configure(cell, at: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tagData.count
+    }
+    
+    func configure(_ cell: UICollectionViewCell, at indexPath: IndexPath) -> TagCell {
+        guard let `cell` = cell as? TagCell else {return TagCell()}
+        cell.tagLabel.text = tagData[indexPath.row]
+        return cell
+    }
+
 }
