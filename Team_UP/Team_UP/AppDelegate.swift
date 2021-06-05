@@ -6,14 +6,27 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        Auth.auth().addIDTokenDidChangeListener { (auth, user) in
+            if user == nil {
+                self.showModalAuth()
+            }
+        }
         return true
+    }
+    
+    func showModalAuth() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let newvc = storyBoard.instantiateViewController(identifier: "ViewController") as! ViewController
+        self.window?.rootViewController?.present(newvc, animated: true, completion: nil)
     }
 
     // MARK: UISceneSession Lifecycle

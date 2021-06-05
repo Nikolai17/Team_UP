@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,11 +15,16 @@
 		35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */; };
 		35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */; };
 		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
-		35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */; };
-		35FA8902266AF1320063BF56 /* SportsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */; };
+		35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */; };
+		B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */; };
+		B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC4266B5AF00017FC25 /* FeedCell.swift */; };
+		B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC7266B5B140017FC25 /* FeedsView.swift */; };
+		B5212CCB266B5B240017FC25 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CCA266B5B240017FC25 /* Feed.swift */; };
+		CCDA03C9B0F7CD4690C3FB88 /* Pods_Team_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.release.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.release.xcconfig"; sourceTree = "<group>"; };
 		35FA88D2266AA77E0063BF56 /* Team_UP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team_UP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA88D5266AA77E0063BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,8 +35,13 @@
 		35FA88E3266AA7800063BF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsFeedViewController.swift; sourceTree = "<group>"; };
-		35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsFeedViewController.xib; sourceTree = "<group>"; };
+		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
+		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
+		B5212CCA266B5B240017FC25 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDA03C9B0F7CD4690C3FB88 /* Pods_Team_UP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,8 @@
 			children = (
 				35FA88D4266AA77E0063BF56 /* Team_UP */,
 				35FA88D3266AA77E0063BF56 /* Products */,
+				8D2DF476D57F098C6E7EB0EB /* Pods */,
+				96559DBD5DA1D6DBBA5EEBFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,13 +77,14 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
-				35FA88FC266AF0ED0063BF56 /* SportsFeed */,
+				B5212CBF266B5A8D0017FC25 /* Feeds */,
 				35FA88F4266AEFF60063BF56 /* Helpers */,
 				35FA88F1266ADF350063BF56 /* Fonts */,
 				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
 				35FA88D7266AA77E0063BF56 /* SceneDelegate.swift */,
 				35FA88FA266AF0930063BF56 /* Authorization */,
 				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
+				35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */,
 				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
 				35FA88E3266AA7800063BF56 /* Info.plist */,
 			);
@@ -110,13 +124,56 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
-		35FA88FC266AF0ED0063BF56 /* SportsFeed */ = {
+		8D2DF476D57F098C6E7EB0EB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				35FA88FD266AF1190063BF56 /* SportsFeedViewController.swift */,
-				35FA8901266AF1320063BF56 /* SportsFeedViewController.xib */,
+				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
+				1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */,
 			);
-			path = SportsFeed;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96559DBD5DA1D6DBBA5EEBFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5212CBF266B5A8D0017FC25 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				B5212CD1266B5B3F0017FC25 /* Controller */,
+				B5212CCF266B5B350017FC25 /* View */,
+				B5212CCD266B5B2A0017FC25 /* Model */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		B5212CCD266B5B2A0017FC25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5212CCA266B5B240017FC25 /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5212CCF266B5B350017FC25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5212CC4266B5AF00017FC25 /* FeedCell.swift */,
+				B5212CC7266B5B140017FC25 /* FeedsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5212CD1266B5B3F0017FC25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35FA88E6266AA7800063BF56 /* Build configuration list for PBXNativeTarget "Team_UP" */;
 			buildPhases = (
+				FAEF5D07DEBE82E0A70CF768 /* [CP] Check Pods Manifest.lock */,
 				35FA88CE266AA77E0063BF56 /* Sources */,
 				35FA88CF266AA77E0063BF56 /* Frameworks */,
 				35FA88D0266AA77E0063BF56 /* Resources */,
+				B0B60D7496670E513F91F3EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,9 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FA8902266AF1320063BF56 /* SportsFeedViewController.xib in Resources */,
 				35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */,
 				35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */,
+				35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */,
 				35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */,
 				35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */,
 			);
@@ -186,13 +245,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0B60D7496670E513F91F3EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEF5D07DEBE82E0A70CF768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Team_UP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35FA88CE266AA77E0063BF56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FA88FE266AF1190063BF56 /* SportsFeedViewController.swift in Sources */,
+				B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */,
+				B5212CCB266B5B240017FC25 /* Feed.swift in Sources */,
+				B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */,
 				35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */,
+				B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */,
 				35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */,
 				35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */,
 				35FA88D8266AA77E0063BF56 /* SceneDelegate.swift in Sources */,
@@ -339,6 +443,7 @@
 		};
 		35FA88E7266AA7800063BF56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +463,7 @@
 		};
 		35FA88E8266AA7800063BF56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
