@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CompetitionsViewController: UIViewController {
+class CompetitionsViewController: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)

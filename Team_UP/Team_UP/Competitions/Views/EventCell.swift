@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EventCell: UITableViewCell {
+final class EventCell: UITableViewCell {
     // type
     let typeLabel: UILabel = {
         let label = UILabel()

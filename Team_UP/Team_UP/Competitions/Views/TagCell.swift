@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TagCell: UICollectionViewCell {
+final class TagCell: UICollectionViewCell {
     static let identifier = "TagCollectionViewCell"
     let viewConteiner: UIView = {
         let view = UIView()
