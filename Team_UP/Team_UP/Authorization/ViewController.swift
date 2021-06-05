@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet private weak var loginTextField: UITextField!
     @IBOutlet private weak var continueButton: UIButton!
     @IBOutlet private weak var eyeImageView: UIImageView!
+    var keyboardDismissTapGesture: UIGestureRecognizer?
+    
     
     @IBAction func tapOnEyeInSecureTextField(_ sender: Any) {
         passwordTextField.isSecureTextEntry.toggle()
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        registerForKeyboardNotification()
     }
     
     // MARK: - Private methods
@@ -52,17 +55,47 @@ class ViewController: UIViewController {
     
     private func configurePlaceHolder(_ textField: UITextField, placeHolderText: String) {
         textField.attributedPlaceholder = NSAttributedString(string: placeHolderText,
-                                     attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+                                                             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
+    
+    // MARK: - Helpers
+    
+    //  Обработка появления клавиатуры
+    private func registerForKeyboardNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    // MARK: - Selectors
+    @objc private func keyboardWillShow(_ notification: Notification) {
+        if keyboardDismissTapGesture == nil {
+            keyboardDismissTapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard(sender:)))
+            keyboardDismissTapGesture?.cancelsTouchesInView = false
+            view.addGestureRecognizer(keyboardDismissTapGesture!)
+        }
+        
+    }
+    @objc func dismissKeyboard(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    @objc private func keyboardWillHide() {
+        if keyboardDismissTapGesture != nil {
+            view.removeGestureRecognizer(keyboardDismissTapGesture!)
+            keyboardDismissTapGesture = nil
+        }
+    }
+    
+    
     // MARK: - Constants
     private enum Constants {
-//        Strings
-        static let passwordTextFieldPlaceHolder = "Табельный номер"
-        static let loginTextFieldPlaceHolder = "Пароль"
+        //        Strings
+        static let passwordTextFieldPlaceHolder = "Пароль"
+        static let loginTextFieldPlaceHolder = "Табельный номер"
         static let openEyeImage = "ic_open_eye"
         static let hideEyeImage = "ic_hide_eye"
         
-//        Color
+        //        Color
         static let bottomViewColor = UIColor(red: 0.035, green: 0.035, blue: 0.188, alpha: 1).cgColor
         static let spaceBlue = UIColor(red: 0.173, green: 0.176, blue: 0.518, alpha: 1)
         static let continueButtonColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
