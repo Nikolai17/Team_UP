@@ -33,6 +33,9 @@
 		EFD0930D266B80BB00739B57 /* AchivementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */; };
 		EFD09312266B968000739B57 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09311266B968000739B57 /* SportViewController.swift */; };
 		EFD09314266B99CD00739B57 /* SportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */; };
+		EFE23F97266BB3FC0006DDEF /* DetailCompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE23F96266BB3FC0006DDEF /* DetailCompetitionViewController.swift */; };
+		EFE23F99266BC9550006DDEF /* EventItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE23F98266BC9550006DDEF /* EventItemView.swift */; };
+		EFE23F9B266BDE060006DDEF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE23F9A266BDE060006DDEF /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		EFD0930C266B80BB00739B57 /* AchivementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivementCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFD09311266B968000739B57 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		EFD09313266B99CD00739B57 /* SportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFE23F96266BB3FC0006DDEF /* DetailCompetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCompetitionViewController.swift; sourceTree = "<group>"; };
+		EFE23F98266BC9550006DDEF /* EventItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemView.swift; sourceTree = "<group>"; };
+		EFE23F9A266BDE060006DDEF /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
+				EFE23F95266BB3860006DDEF /* DetailCompetition */,
 				B5158BC4266BB76C00F72543 /* Competitions */,
 				EFD092FC266B449B00739B57 /* Profile */,
 				B5212CBF266B5A8D0017FC25 /* Feeds */,
@@ -129,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				35FA88F5266AF00C0063BF56 /* Extensions */,
+				EFE23F9A266BDE060006DDEF /* NotificationManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -284,6 +292,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EFE23F95266BB3860006DDEF /* DetailCompetition */ = {
+			isa = PBXGroup;
+			children = (
+				EFE23F96266BB3FC0006DDEF /* DetailCompetitionViewController.swift */,
+				EFE23F98266BC9550006DDEF /* EventItemView.swift */,
+			);
+			path = DetailCompetition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +422,7 @@
 				B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */,
 				EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */,
 				EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */,
+				EFE23F97266BB3FC0006DDEF /* DetailCompetitionViewController.swift in Sources */,
 				EFD09307266B76C100739B57 /* ListTableViewCell.swift in Sources */,
 				B5158BCD266BB8CB00F72543 /* Event.swift in Sources */,
 				B5158BC6266BB80500F72543 /* CompetitionsViewController.swift in Sources */,
@@ -415,8 +433,10 @@
 				B5158BE8266BCD8F00F72543 /* TagCell.swift in Sources */,
 				EFD0930D266B80BB00739B57 /* AchivementCollectionViewCell.swift in Sources */,
 				35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */,
+				EFE23F99266BC9550006DDEF /* EventItemView.swift in Sources */,
 				B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */,
 				35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */,
+				EFE23F9B266BDE060006DDEF /* NotificationManager.swift in Sources */,
 				35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */,
 				EFD09305266B72D600739B57 /* SettingsViewController.swift in Sources */,
 				EFD09312266B968000739B57 /* SportViewController.swift in Sources */,

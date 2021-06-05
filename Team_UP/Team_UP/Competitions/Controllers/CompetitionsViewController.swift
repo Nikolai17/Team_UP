@@ -18,6 +18,18 @@ class CompetitionsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     // MARK: - Свойства
     
     lazy var tagCollection: UICollectionView = {
@@ -104,9 +116,8 @@ extension CompetitionsViewController: UITableViewDataSource {
 extension CompetitionsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(DetailCompetitionViewController(), animated: true)
     }
-
-    
 }
 
 // MARK: - Extension CollectionView DataSource

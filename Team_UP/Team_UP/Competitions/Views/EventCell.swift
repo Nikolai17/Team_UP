@@ -80,6 +80,7 @@ final class EventCell: UITableViewCell {
      // MARK: - Helpers
     
     func createUI() {
+        selectionStyle = .none
         contentView.backgroundColor = .clear
         backgroundColor = .clear
         addSubview(eventImageView)
