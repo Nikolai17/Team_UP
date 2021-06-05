@@ -8,7 +8,17 @@
 import UIKit
 
 class FeedsViewController: UIViewController {
-
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        
+        tabBarItem = UITabBarItem(title: "Лента", image: #imageLiteral(resourceName: "like"), tag: 0)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Свойства
     private let cellId = "cell" // Идентификатор ячейки
     private lazy var feedTableView: UITableView = { // Объект таблицы

@@ -35,17 +35,11 @@ class ViewController: UIViewController {
        
         Auth.auth().signIn(withEmail: login, password: pass) { (response, error) in
             if error == nil {
-                self.dismiss(animated: true, completion: nil)
-                self.showAlert(Constants.successAuthAlert)
+                self.present(MainTabBarViewController(), animated: true)
             } else {
                 self.showAlert(Constants.failureAuthAlert)
             }
         }
-
-        let feedVC = FeedsViewController()
-        feedVC.modalPresentationStyle = .fullScreen
-        present(feedVC, animated: true)
-
     }
     
     private func resetEyeImageView() {
