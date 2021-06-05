@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -14,7 +15,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Team_UP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Team_UP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,6 +101,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="spr-wA-iRS"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wEM-b3-Rik" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" constant="16" id="0Mg-0c-NLq"/>
@@ -116,7 +118,7 @@
                             <constraint firstAttribute="right" secondItem="nzV-PL-Pye" secondAttribute="right" constant="16" id="jlL-cN-AkV"/>
                             <constraint firstItem="0yC-Eq-IWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lwm-fn-ISd"/>
                             <constraint firstItem="nzV-PL-Pye" firstAttribute="left" secondItem="8bC-Xf-vdC" secondAttribute="left" constant="16" id="p4A-D1-l8y"/>
-                            <constraint firstItem="0yC-Eq-IWe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="16" id="pcJ-1a-i84"/>
+                            <constraint firstItem="0yC-Eq-IWe" firstAttribute="top" secondItem="spr-wA-iRS" secondAttribute="top" constant="16" id="pcJ-1a-i84"/>
                             <constraint firstItem="wEM-b3-Rik" firstAttribute="top" secondItem="L1o-FB-0JR" secondAttribute="bottom" constant="40" id="qih-ze-aDc"/>
                             <constraint firstItem="QpQ-Mt-Uqh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zXz-A5-bUA"/>
                         </constraints>
