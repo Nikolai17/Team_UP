@@ -1,5 +1,5 @@
 //
-//  СreatingСompetitionViewController.swift
+//  CreatingCompetitionViewController.swift
 //  Team_UP
 //
 //  Created by Николай Вольников on 05.06.2021.
@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import GrowingTextView
 
-final class СreatingСompetitionViewController: UIViewController {
+final class CreatingCompetitionViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet private weak var nameEventTextView: GrowingTextView!
@@ -108,7 +108,7 @@ final class СreatingСompetitionViewController: UIViewController {
     }
 }
 
-extension СreatingСompetitionViewController: GrowingTextViewDelegate {
+extension CreatingCompetitionViewController: GrowingTextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         
     }
@@ -117,7 +117,7 @@ extension СreatingСompetitionViewController: GrowingTextViewDelegate {
     }
 }
 
-extension СreatingСompetitionViewController: CustomButtonDelegate {
+extension CreatingCompetitionViewController: CustomButtonDelegate {
     func didTapButton(_ title: String) {
     // Открытие элементов, смотрим по названию кнопки
     }

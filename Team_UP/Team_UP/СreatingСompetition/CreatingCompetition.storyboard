@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Creating Competition View Controller-->
         <scene sceneID="0rd-aJ-pPl">
             <objects>
-                <viewController storyboardIdentifier="СreatingСompetitionID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="08G-0B-A7q" customClass="СreatingСompetitionViewController" customModule="Team_UP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatingCompetitionID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="08G-0B-A7q" customClass="CreatingCompetitionViewController" customModule="Team_UP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rKq-CG-3YX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

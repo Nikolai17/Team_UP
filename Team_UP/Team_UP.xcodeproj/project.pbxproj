@@ -17,8 +17,8 @@
 		35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */; };
 		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
 		35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */; };
-		35FA8967266BB5660063BF56 /* СreatingСompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8966266BB5660063BF56 /* СreatingСompetitionViewController.swift */; };
-		35FA896B266BB5980063BF56 /* СreatingСompetition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA896A266BB5980063BF56 /* СreatingСompetition.storyboard */; };
+		35FA8967266BB5660063BF56 /* CreatingCompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8966266BB5660063BF56 /* CreatingCompetitionViewController.swift */; };
+		35FA896B266BB5980063BF56 /* CreatingCompetition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA896A266BB5980063BF56 /* CreatingCompetition.storyboard */; };
 		B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */; };
 		B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC4266B5AF00017FC25 /* FeedCell.swift */; };
 		B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC7266B5B140017FC25 /* FeedsView.swift */; };
@@ -49,8 +49,8 @@
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		35FA8966266BB5660063BF56 /* СreatingСompetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreatingСompetitionViewController.swift"; sourceTree = "<group>"; };
-		35FA896A266BB5980063BF56 /* СreatingСompetition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "СreatingСompetition.storyboard"; sourceTree = "<group>"; };
+		35FA8966266BB5660063BF56 /* CreatingCompetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCompetitionViewController.swift; sourceTree = "<group>"; };
+		35FA896A266BB5980063BF56 /* CreatingCompetition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatingCompetition.storyboard; sourceTree = "<group>"; };
 		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
 		B5212CC0266B5ABF0017FC25 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -163,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				35A9231A266C095000D00C8D /* Buttons */,
-				35FA8966266BB5660063BF56 /* СreatingСompetitionViewController.swift */,
-				35FA896A266BB5980063BF56 /* СreatingСompetition.storyboard */,
+				35FA8966266BB5660063BF56 /* CreatingCompetitionViewController.swift */,
+				35FA896A266BB5980063BF56 /* CreatingCompetition.storyboard */,
 			);
 			path = "СreatingСompetition";
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 				35FA88E2266AA7800063BF56 /* LaunchScreen.storyboard in Resources */,
 				35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */,
 				35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */,
-				35FA896B266BB5980063BF56 /* СreatingСompetition.storyboard in Resources */,
+				35FA896B266BB5980063BF56 /* CreatingCompetition.storyboard in Resources */,
 				35A92320266C097D00D00C8D /* CustomButton.xib in Resources */,
 				35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */,
 				35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */,
@@ -390,7 +390,7 @@
 				B5212CCB266B5B240017FC25 /* Feed.swift in Sources */,
 				35A9231C266C096B00D00C8D /* CustomButton.swift in Sources */,
 				B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */,
-				35FA8967266BB5660063BF56 /* СreatingСompetitionViewController.swift in Sources */,
+				35FA8967266BB5660063BF56 /* CreatingCompetitionViewController.swift in Sources */,
 				EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */,
 				EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */,
 				EFD09307266B76C100739B57 /* ListTableViewCell.swift in Sources */,
