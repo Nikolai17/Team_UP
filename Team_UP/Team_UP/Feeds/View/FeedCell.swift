@@ -45,6 +45,15 @@ class FeedCell: UITableViewCell {
         cellView.nameLabel.text = feed.name
         cellView.descriptionLabel.text = feed.description
         cellView.kindOfSport.text = feed.kindOfSport
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
     }
 
 }

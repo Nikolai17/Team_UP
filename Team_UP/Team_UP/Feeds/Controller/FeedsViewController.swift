@@ -22,7 +22,6 @@ class FeedsViewController: UIViewController {
         table.backgroundColor = .clear
         return table
     }()
-
     
     var feedData = [Feed]() // Массив с объектами
     
@@ -81,4 +80,3 @@ extension FeedsViewController: UITableViewDelegate {
 
     
 }
-
