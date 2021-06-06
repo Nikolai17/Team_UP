@@ -10,6 +10,11 @@ import CoreLocation
 
 class DetailCompetitionViewController: UIViewController {
     
+    enum DetailCompetitionState {
+        case create
+        case part
+    }
+    
     private let locationManager = CLLocationManager()
     
     private let backgroundImage = UIImageView()
@@ -35,6 +40,17 @@ class DetailCompetitionViewController: UIViewController {
     private let galleryDescriptionLabel = UILabel()
     
     private let sendButton = UIButton()
+    
+    private let state: DetailCompetitionState
+    
+    init(state: DetailCompetitionState) {
+        self.state = state
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +99,7 @@ class DetailCompetitionViewController: UIViewController {
         setGradient()
         
         runButton.backgroundColor = UIColor(red: 0.918, green: 0.337, blue: 0.086, alpha: 1)
-        runButton.setTitle("Участвовать", for: .normal)
+        runButton.setTitle(state == .create ? "Создать" : "Участвовать", for: .normal)
         runButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
         runButton.layer.cornerRadius = 16
         runButton.addTarget(self, action: #selector(didTapRunButton), for: .touchUpInside)
@@ -160,7 +176,7 @@ class DetailCompetitionViewController: UIViewController {
             backgroundView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
             gradientView.heightAnchor.constraint(equalToConstant: 200),
-            gradientView.bottomAnchor.constraint(equalTo: eventImageView.bottomAnchor, constant: 10),
+            gradientView.bottomAnchor.constraint(equalTo: runButton.topAnchor, constant: 4),
             gradientView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             gradientView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
@@ -234,27 +250,35 @@ class DetailCompetitionViewController: UIViewController {
     }
     
     @objc private func didTapRunButton() {
-        let status = CLLocationManager.authorizationStatus()
-        
-        switch status {
-        case .authorizedAlways:
-            locationManager.requestLocation()
-        case .authorizedWhenInUse:
-            locationManager.requestLocation()
-        case .denied:
-            print("denied")
-            locationManager.requestAlwaysAuthorization()
-            break
-        case .notDetermined:
-            print("notDetermined")
-            locationManager.requestAlwaysAuthorization()
-            break
-        case .restricted:
-            print("restricted")
-            locationManager.requestAlwaysAuthorization()
-            break
-        @unknown default:
-            break
+        if state == .create {
+            navigationController?.popToRootViewController(animated: true)
+            NotificationManager.shared.showNotification(title: "Cобытие добавлено",
+                                                        body: "Спасибо за ваше уделенное время",
+                                                        identifier: "Notification event")
+            
+        } else {
+            let status = CLLocationManager.authorizationStatus()
+            
+            switch status {
+            case .authorizedAlways:
+                locationManager.requestLocation()
+            case .authorizedWhenInUse:
+                locationManager.requestLocation()
+            case .denied:
+                print("denied")
+                locationManager.requestAlwaysAuthorization()
+                break
+            case .notDetermined:
+                print("notDetermined")
+                locationManager.requestAlwaysAuthorization()
+                break
+            case .restricted:
+                print("restricted")
+                locationManager.requestAlwaysAuthorization()
+                break
+            @unknown default:
+                break
+            }
         }
     }
     
@@ -278,6 +302,7 @@ extension DetailCompetitionViewController: CLLocationManagerDelegate {
             let longitude = location.coordinate.longitude
             print("latitude: \(latitude) longitude: \(longitude)")
             
+            navigationController?.popToRootViewController(animated: true)
             NotificationManager.shared.showNotification(title: "Присутствие подтверждено",
                                                         body: "Спасибо за ваше участие в данном соревновании",
                                                         identifier: "Notification event")

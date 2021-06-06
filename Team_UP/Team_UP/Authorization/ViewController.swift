@@ -65,6 +65,15 @@ class ViewController: UIViewController {
         loginTextField.delegate = self
         passwordTextField.delegate = self
         
+        loginTextField.leftView = UIView(frame: CGRect(origin: .zero,
+                                                       size: CGSize(width: 10,
+                                                                    height: loginTextField.frame.height)))
+        loginTextField.leftViewMode = .always
+        passwordTextField.leftView = UIView(frame: CGRect(origin: .zero,
+                                                          size: CGSize(width: 10,
+                                                                       height: passwordTextField.frame.height)))
+        passwordTextField.leftViewMode = .always
+        
         passwordTextField.backgroundColor = Constants.spaceBlue
         loginTextField.backgroundColor = Constants.spaceBlue
         passwordTextField.setCornerRadius(amount: 16, withBorderAmount: 0, andColor: Constants.spaceBlue)
