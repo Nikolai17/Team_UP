@@ -61,6 +61,12 @@ final class CreatingCompetitionViewController: UIViewController {
         detailsTextView.textColor = .white
         addressTextView.textColor = .white
         
+        let insets = UIEdgeInsets(top: 15, left: 10, bottom: 0, right: 10)
+        nameEventTextView.textContainerInset = insets
+        descriptionTextView.textContainerInset = insets
+        detailsTextView.textContainerInset = insets
+        addressTextView.textContainerInset = insets
+        
         nameEventTextView.placeholderColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5)
         nameEventTextView.minHeight = Constants.minHeight
         
