@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35AD7009266C2BA4003A5533 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD7005266C2BA4003A5533 /* CustomButton.swift */; };
+		35AD700A266C2BA4003A5533 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35AD7006266C2BA4003A5533 /* CustomButton.xib */; };
+		35AD700B266C2BA4003A5533 /* CreatingCompetition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35AD7007266C2BA4003A5533 /* CreatingCompetition.storyboard */; };
+		35AD700C266C2BA4003A5533 /* CreatingCompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD7008266C2BA4003A5533 /* CreatingCompetitionViewController.swift */; };
 		35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88D5266AA77E0063BF56 /* AppDelegate.swift */; };
 		35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88D9266AA77E0063BF56 /* ViewController.swift */; };
 		35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88DB266AA77E0063BF56 /* Main.storyboard */; };
@@ -15,6 +19,7 @@
 		35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */; };
 		35FA88F7266AF01C0063BF56 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA88F6266AF01C0063BF56 /* UIView.swift */; };
 		35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */; };
+		B2E931B44760FE7C56EC5CCE /* Pods_Team_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EB452F6EE2019BB1A21720 /* Pods_Team_UP.framework */; };
 		B5158BC6266BB80500F72543 /* CompetitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5158BC5266BB80500F72543 /* CompetitionsViewController.swift */; };
 		B5158BCA266BB85500F72543 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5158BC9266BB85500F72543 /* EventCell.swift */; };
 		B5158BCD266BB8CB00F72543 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5158BCC266BB8CB00F72543 /* Event.swift */; };
@@ -23,7 +28,6 @@
 		B5212CC5266B5AF00017FC25 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC4266B5AF00017FC25 /* FeedCell.swift */; };
 		B5212CC8266B5B140017FC25 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CC7266B5B140017FC25 /* FeedsView.swift */; };
 		B5212CCB266B5B240017FC25 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5212CCA266B5B240017FC25 /* Feed.swift */; };
-		CCDA03C9B0F7CD4690C3FB88 /* Pods_Team_UP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */; };
 		EF5D3BFC266C0B790086449E /* AddCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D3BFB266C0B790086449E /* AddCollectionViewCell.swift */; };
 		EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD092FD266B44AC00739B57 /* ProfileViewController.swift */; };
 		EFD09302266B657F00739B57 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD09301266B657F00739B57 /* MainTabBarViewController.swift */; };
@@ -40,7 +44,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.release.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.release.xcconfig"; sourceTree = "<group>"; };
+		23EB452F6EE2019BB1A21720 /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AD7005266C2BA4003A5533 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		35AD7006266C2BA4003A5533 /* CustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		35AD7007266C2BA4003A5533 /* CreatingCompetition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreatingCompetition.storyboard; sourceTree = "<group>"; };
+		35AD7008266C2BA4003A5533 /* CreatingCompetitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingCompetitionViewController.swift; sourceTree = "<group>"; };
 		35FA88D2266AA77E0063BF56 /* Team_UP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team_UP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FA88D5266AA77E0063BF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FA88D9266AA77E0063BF56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +59,8 @@
 		35FA88EE266ADD3D0063BF56 /* source-sans-pro-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro-semibold.ttf"; sourceTree = "<group>"; };
 		35FA88F6266AF01C0063BF56 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2740FCE182359EC1BE1974 /* Pods-Team_UP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.debug.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.debug.xcconfig"; sourceTree = "<group>"; };
+		85369EA0A1DC53B3CCE9AC3A /* Pods-Team_UP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_UP.release.xcconfig"; path = "Target Support Files/Pods-Team_UP/Pods-Team_UP.release.xcconfig"; sourceTree = "<group>"; };
 		B5158BC5266BB80500F72543 /* CompetitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewController.swift; sourceTree = "<group>"; };
 		B5158BC9266BB85500F72543 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		B5158BCC266BB8CB00F72543 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -60,7 +69,6 @@
 		B5212CC4266B5AF00017FC25 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B5212CC7266B5B140017FC25 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
 		B5212CCA266B5B240017FC25 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
-		D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Team_UP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5D3BFB266C0B790086449E /* AddCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFD092FD266B44AC00739B57 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EFD09301266B657F00739B57 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -81,20 +89,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDA03C9B0F7CD4690C3FB88 /* Pods_Team_UP.framework in Frameworks */,
+				B2E931B44760FE7C56EC5CCE /* Pods_Team_UP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35AD7003266C2BA4003A5533 /* CreatingCompetition */ = {
+			isa = PBXGroup;
+			children = (
+				35AD7004266C2BA4003A5533 /* Buttons */,
+				35AD7007266C2BA4003A5533 /* CreatingCompetition.storyboard */,
+				35AD7008266C2BA4003A5533 /* CreatingCompetitionViewController.swift */,
+			);
+			path = CreatingCompetition;
+			sourceTree = "<group>";
+		};
+		35AD7004266C2BA4003A5533 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				35AD7005266C2BA4003A5533 /* CustomButton.swift */,
+				35AD7006266C2BA4003A5533 /* CustomButton.xib */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		35FA88C9266AA77E0063BF56 = {
 			isa = PBXGroup;
 			children = (
 				35FA88D4266AA77E0063BF56 /* Team_UP */,
 				35FA88D3266AA77E0063BF56 /* Products */,
 				8D2DF476D57F098C6E7EB0EB /* Pods */,
-				96559DBD5DA1D6DBBA5EEBFF /* Frameworks */,
+				7A1EB10CCD4144659FEB2ED5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +136,7 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
+				35AD7003266C2BA4003A5533 /* CreatingCompetition */,
 				EFE23F95266BB3860006DDEF /* DetailCompetition */,
 				B5158BC4266BB76C00F72543 /* Competitions */,
 				EFD092FC266B449B00739B57 /* Profile */,
@@ -160,21 +188,21 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
+		7A1EB10CCD4144659FEB2ED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23EB452F6EE2019BB1A21720 /* Pods_Team_UP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D2DF476D57F098C6E7EB0EB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */,
-				1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */,
+				6C2740FCE182359EC1BE1974 /* Pods-Team_UP.debug.xcconfig */,
+				85369EA0A1DC53B3CCE9AC3A /* Pods-Team_UP.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		96559DBD5DA1D6DBBA5EEBFF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D13E44BD65FF002FC507DC6B /* Pods_Team_UP.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B5158BC4266BB76C00F72543 /* Competitions */ = {
@@ -311,11 +339,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35FA88E6266AA7800063BF56 /* Build configuration list for PBXNativeTarget "Team_UP" */;
 			buildPhases = (
-				FAEF5D07DEBE82E0A70CF768 /* [CP] Check Pods Manifest.lock */,
+				04D9A72220CB36591C64E1D9 /* [CP] Check Pods Manifest.lock */,
 				35FA88CE266AA77E0063BF56 /* Sources */,
 				35FA88CF266AA77E0063BF56 /* Frameworks */,
 				35FA88D0266AA77E0063BF56 /* Resources */,
-				B0B60D7496670E513F91F3EB /* [CP] Embed Pods Frameworks */,
+				3AECD4E3C3BC149A48ED3645 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,6 +395,8 @@
 				35FA88EF266ADD3D0063BF56 /* source-sans-pro-semibold.ttf in Resources */,
 				35FA892F266B7C2D0063BF56 /* GoogleService-Info.plist in Resources */,
 				35FA88DF266AA7800063BF56 /* Assets.xcassets in Resources */,
+				35AD700B266C2BA4003A5533 /* CreatingCompetition.storyboard in Resources */,
+				35AD700A266C2BA4003A5533 /* CustomButton.xib in Resources */,
 				35FA88DD266AA77E0063BF56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,24 +404,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B0B60D7496670E513F91F3EB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FAEF5D07DEBE82E0A70CF768 /* [CP] Check Pods Manifest.lock */ = {
+		04D9A72220CB36591C64E1D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,6 +426,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3AECD4E3C3BC149A48ED3645 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Team_UP/Pods-Team_UP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,6 +454,7 @@
 				B5212CCB266B5B240017FC25 /* Feed.swift in Sources */,
 				B5212CC1266B5ABF0017FC25 /* FeedsViewController.swift in Sources */,
 				EFD0930B266B7D5E00739B57 /* ListItem.swift in Sources */,
+				35AD7009266C2BA4003A5533 /* CustomButton.swift in Sources */,
 				EFD092FE266B44AC00739B57 /* ProfileViewController.swift in Sources */,
 				EFE23F97266BB3FC0006DDEF /* DetailCompetitionViewController.swift in Sources */,
 				EF5D3BFC266C0B790086449E /* AddCollectionViewCell.swift in Sources */,
@@ -442,6 +473,7 @@
 				35FA88DA266AA77E0063BF56 /* ViewController.swift in Sources */,
 				EFE23F9B266BDE060006DDEF /* NotificationManager.swift in Sources */,
 				35FA88D6266AA77E0063BF56 /* AppDelegate.swift in Sources */,
+				35AD700C266C2BA4003A5533 /* CreatingCompetitionViewController.swift in Sources */,
 				EFD09305266B72D600739B57 /* SettingsViewController.swift in Sources */,
 				EFD09312266B968000739B57 /* SportViewController.swift in Sources */,
 			);
@@ -587,7 +619,7 @@
 		};
 		35FA88E7266AA7800063BF56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF8B2A2EA27FD3ECA8BD839F /* Pods-Team_UP.debug.xcconfig */;
+			baseConfigurationReference = 6C2740FCE182359EC1BE1974 /* Pods-Team_UP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -608,7 +640,7 @@
 		};
 		35FA88E8266AA7800063BF56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AC46D7D970B26B5D86DDBC6 /* Pods-Team_UP.release.xcconfig */;
+			baseConfigurationReference = 85369EA0A1DC53B3CCE9AC3A /* Pods-Team_UP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

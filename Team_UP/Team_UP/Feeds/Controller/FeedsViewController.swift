@@ -46,6 +46,7 @@ class FeedsViewController: UIViewController {
     // MARK: - Helpers
     
     func createUI() {
+        navigationController?.navigationBar.isHidden = true
         let backgroundImageView = UIImageView(image: UIImage(named: "background"))
         backgroundImageView.frame = view.frame
         view.addSubview(backgroundImageView)

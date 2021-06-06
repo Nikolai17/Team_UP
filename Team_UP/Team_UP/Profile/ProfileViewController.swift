@@ -58,6 +58,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupViews() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
         
         addChild(sportVC)
         addChild(achievementsVC)

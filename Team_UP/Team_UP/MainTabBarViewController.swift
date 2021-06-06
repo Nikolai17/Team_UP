@@ -20,8 +20,8 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         delegate = self
         
         let competitionVC = UINavigationController(rootViewController: CompetitionsViewController())
-        let feedsVC = FeedsViewController()
-        let profileVC = ProfileViewController()
+        let feedsVC = UINavigationController(rootViewController: FeedsViewController())
+        let profileVC = UINavigationController(rootViewController: ProfileViewController())
         
         viewControllers = [competitionVC, feedsVC, profileVC]
         selectedIndex = 1

@@ -29,11 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().delegate = self
         notificationManager.registerForPushNotification()
         
-//        Auth.auth().addIDTokenDidChangeListener { (auth, user) in
-//            if user == nil {
-//
-//            }
-//        }
+        Auth.auth().addIDTokenDidChangeListener { (auth, user) in
+            if user == nil {
+
+            }
+        }
         
         return true
     }
