@@ -7,4 +7,6 @@
 - создавать небольшие мероприятия друг для друга (за это баллы не начисляются
 - делиться своими достижениями в спорте , на основании которых формируются рейтинг среди всех пользователей
 
-<a href='https://postimg.cc/mhWvKvvB' target='_blank'><img src='https://i.postimg.cc/mhWvKvvB/My-Collages.jpg' border='0' alt='My-Collages'/></a>
+<a href="https://postimg.cc/HJ2MdD6R" target="_blank"><img src="https://i.postimg.cc/HJ2MdD6R/2021-06-06-09-43-18.jpg" alt="2021-06-06-09-43-18"/></a><br/><br/>
+<a href="https://postimg.cc/jw3Jn60h" target="_blank"><img src="https://i.postimg.cc/jw3Jn60h/2021-06-06-09-43-25.jpg" alt="2021-06-06-09-43-25"/></a><br/><br/>
+
