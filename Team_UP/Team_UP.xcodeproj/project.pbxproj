@@ -136,20 +136,10 @@
 		35FA88D4266AA77E0063BF56 /* Team_UP */ = {
 			isa = PBXGroup;
 			children = (
-				35AD7003266C2BA4003A5533 /* CreatingCompetition */,
-				EFE23F95266BB3860006DDEF /* DetailCompetition */,
-				B5158BC4266BB76C00F72543 /* Competitions */,
-				EFD092FC266B449B00739B57 /* Profile */,
-				B5212CBF266B5A8D0017FC25 /* Feeds */,
+				AA4214C6266CAC1000831E96 /* Presentation */,
 				35FA88F4266AEFF60063BF56 /* Helpers */,
-				35FA88F1266ADF350063BF56 /* Fonts */,
-				35FA88FA266AF0930063BF56 /* Authorization */,
-				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
-				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
-				35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */,
-				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
-				35FA88E3266AA7800063BF56 /* Info.plist */,
-				EFD09301266B657F00739B57 /* MainTabBarViewController.swift */,
+				AA4214C4266CABE900831E96 /* App */,
+				AA4214C5266CABF500831E96 /* Resources */,
 			);
 			path = Team_UP;
 			sourceTree = "<group>";
@@ -203,6 +193,40 @@
 				85369EA0A1DC53B3CCE9AC3A /* Pods-Team_UP.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA4214C4266CABE900831E96 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				35FA88F1266ADF350063BF56 /* Fonts */,
+				35FA88D5266AA77E0063BF56 /* AppDelegate.swift */,
+				35FA892E266B7C2D0063BF56 /* GoogleService-Info.plist */,
+				35FA88E3266AA7800063BF56 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA4214C5266CABF500831E96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35FA88DE266AA7800063BF56 /* Assets.xcassets */,
+				35FA88E0266AA7800063BF56 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA4214C6266CAC1000831E96 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				35AD7003266C2BA4003A5533 /* CreatingCompetition */,
+				EFE23F95266BB3860006DDEF /* DetailCompetition */,
+				B5158BC4266BB76C00F72543 /* Competitions */,
+				EFD092FC266B449B00739B57 /* Profile */,
+				B5212CBF266B5A8D0017FC25 /* Feeds */,
+				35FA88FA266AF0930063BF56 /* Authorization */,
+				EFD09301266B657F00739B57 /* MainTabBarViewController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		B5158BC4266BB76C00F72543 /* Competitions */ = {
@@ -625,7 +649,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6939WNYZGH;
-				INFOPLIST_FILE = Team_UP/Info.plist;
+				INFOPLIST_FILE = Team_UP/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -646,7 +670,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6939WNYZGH;
-				INFOPLIST_FILE = Team_UP/Info.plist;
+				INFOPLIST_FILE = Team_UP/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
