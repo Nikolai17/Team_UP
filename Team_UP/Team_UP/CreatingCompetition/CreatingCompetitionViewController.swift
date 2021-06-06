@@ -30,7 +30,7 @@ final class CreatingCompetitionViewController: UIViewController {
     }
     
     @IBAction func didTapOnContinueButton(_ sender: Any) {
-        navigationController?.pushViewController(DetailCompetitionViewController(), animated: true)
+        navigationController?.pushViewController(DetailCompetitionViewController(state: .create), animated: true)
     }
     
     override func viewDidLoad() {

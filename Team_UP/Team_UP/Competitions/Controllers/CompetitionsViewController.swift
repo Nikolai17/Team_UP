@@ -116,7 +116,7 @@ extension CompetitionsViewController: UITableViewDataSource {
 extension CompetitionsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.pushViewController(DetailCompetitionViewController(), animated: true)
+        navigationController?.pushViewController(DetailCompetitionViewController(state: .part), animated: true)
     }
 }
 
